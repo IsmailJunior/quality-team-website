@@ -4,4 +4,4 @@ import bannerImageThree from "@/public/static/Stark.jpeg";
 import bannerImageFour from "@/public/static/GotThrones.jpeg";
 import bannerImageFive from "@/public/static/Elon.jpeg";
 
-export const MAIN_BANNER_IMAGES = [ bannerImageOne, bannerImageTwo, bannerImageThree, bannerImageFour, bannerImageFive ];
+export const MAIN_BANNER_IMAGES = [ bannerImageOne, bannerImageTwo, bannerImageThree, bannerImageFour, bannerImageFive];

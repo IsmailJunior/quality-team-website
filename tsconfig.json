@@ -27,7 +27,8 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"app/components/magicui/number-ticker.jsx",
-		"middleware.ts"
+		"middleware.ts",
+		"app/components/custom/vertical-carosuel/vertical-carosuel.jsx"
 	],
 	"exclude": ["node_modules"]
 }
