@@ -1,12 +1,12 @@
 import type { FC } from "react";
-import initTranslations from "@/app/i18n";
+import initTranslations from "@/app/config/i18n";
 import { StaticsTicker } from "@/app/components/custom/statics-ticker";
 
 const i18Namespaces = ["home"];
 export const MainCoaster: FC<{ locale: any }> = async ({ locale }) => {
 	const { t } = await initTranslations(locale, i18Namespaces);
 	return (
-		<div className="text-white absolute flex flex-col space-y-4 md:space-y-10 md:items-center top-3/4 md:bottom-0 left-1/2 -translate-x-1/2 ">
+		<div className="text-white absolute flex flex-col space-y-4 md:space-y-10 md:items-center top-1/2 left-1/2 -translate-x-1/2">
 			<h1 className="text-6xl">{t("mainBanner.headline")}</h1>
 			<div className="flex">
 				<StaticsTicker

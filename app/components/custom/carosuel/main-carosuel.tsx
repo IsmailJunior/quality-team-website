@@ -2,8 +2,8 @@
 import React from "react";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { CarosuelControllers } from "@/app/components/custom/carosuel-controllers";
-import { CarouselIndicator } from "@/app/components/custom/carosuel-indicator";
+import { CarosuelControllers } from "@/app/components/custom/carosuel/carosuel-controllers";
+import { CarouselIndicator } from "@/app/components/custom/carosuel/carosuel-indicator";
 import { MAIN_BANNER_IMAGES } from "@/app/constants/mainBannerImages";
 export const MainCarosuel: React.FC = () => {
 	return (

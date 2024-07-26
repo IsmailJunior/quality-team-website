@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { dir } from "i18next";
-import initTranslations from "@/app/i18n";
-import { i18nConfig } from "@/app/i18nConfig";
+import initTranslations from "@/app/config/i18n";
+import { i18nConfig } from "@/app/config/i18nConfig";
 import { Providers } from "@/app/providers/providers";
 import { cn } from "@/app/lib/utils";
 import "@/app/styles/globals.css";
