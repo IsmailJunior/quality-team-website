@@ -1,0 +1,11 @@
+{
+	"mainBanner": {
+		"headline": "Qaulity Team",
+		"description": "Qaulity Team can make you fucking ad even more boring.",
+		"numbers": {
+			"team": "Team",
+			"members": "Members",
+			"coffees": "Coffees"
+		}
+	}
+}
