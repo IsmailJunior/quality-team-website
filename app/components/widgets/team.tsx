@@ -3,7 +3,7 @@ import { TeamViewer } from "@/app/components/custom/team-viewer/team-viewer";
 
 export const Team: FC = () => {
 	return (
-		<section className="container h-[600px] flex items-center">
+		<section className="h-[750px] flex items-center bg-zinc-900">
 			<TeamViewer />
 		</section>
 	);
