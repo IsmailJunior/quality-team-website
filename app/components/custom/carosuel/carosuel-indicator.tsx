@@ -17,7 +17,7 @@ export const CarouselIndicator: FC<carouselIndicatorType> = ({ items }) => {
 							className={cn(
 								"h-2 w-2 rounded-full rtl:ml-2 ltr:mr-2",
 								currentSlide === index
-									? "bg-black"
+									? "bg-sky-500"
 									: "bg-slate-400"
 							)}
 						/>

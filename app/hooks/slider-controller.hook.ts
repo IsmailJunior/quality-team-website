@@ -1,9 +1,12 @@
 'use client';
-import type { elementType } from '@/app/types/homePage.types';
+import { useEffect} from 'react';
+import { useInterval} from '@mantine/hooks';
+import type { elementType } from '@/app/types/homePage.type';
 import { useMembers } from '@/app/hooks/members.hook';
 
 export const useSliderController = () =>
 {
+  const interval = useInterval(() => onChevronClick(), 3000);
 	const { elements, setElements, currentProfile, setCurrentProfile, } = useMembers();
 	const onProfileClick = (profile: elementType) => {
 		setCurrentProfile(profile);
@@ -63,6 +66,11 @@ export const useSliderController = () =>
 			setCurrentProfile(prevState.at(nextElementId!));
 		}
 		};
+	 useEffect(() => {
+	interval.start();
+    return interval.stop;
+  }, [interval]);
+
 	return {
 		currentProfile,
 		onChevronClick,
