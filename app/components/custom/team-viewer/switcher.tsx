@@ -1,22 +1,9 @@
 "use client";
 import type { FC } from "react";
+import type { switcherType, elementType } from "@/app/types/homePage.types";
 import { cn } from "@/app/lib/utils";
-type elementType = {
-	id: number;
-	pos: number;
-	active: boolean;
-	thumnail: string;
-	picture: string;
-	title: string;
-	description: string;
-};
-type dataType = {
-	data: elementType[];
-	currentProfile: elementType | undefined;
-	onValueFromChild: (profile: elementType) => {};
-};
 
-export const Switcher: FC<dataType> = ({
+export const Switcher: FC<switcherType> = ({
 	data,
 	currentProfile,
 	onValueFromChild,

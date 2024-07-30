@@ -1,11 +1,8 @@
 "use client";
 import type { FC } from "react";
+import type { carouselIndicatorType } from "@/app/types/homePage.types";
 import { DotGroup } from "pure-react-carousel";
 import { cn } from "@/app/lib/utils";
-
-type carouselIndicatorType = {
-	items: number;
-};
 
 export const CarouselIndicator: FC<carouselIndicatorType> = ({ items }) => {
 	return (

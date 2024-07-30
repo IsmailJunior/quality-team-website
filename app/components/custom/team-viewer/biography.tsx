@@ -1,9 +1,5 @@
 import type { FC } from "react";
-
-type biographyType = {
-	title: string | undefined;
-	description: string | undefined;
-};
+import type { biographyType } from "@/app/types/homePage.types";
 
 export const Biography: FC<biographyType> = ({ title, description }) => {
 	return (
