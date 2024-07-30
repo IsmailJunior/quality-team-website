@@ -72,6 +72,18 @@
     display: none;
   }
 
+        .edge {
+          -webkit-mask: linear-gradient(180deg,
+              transparent,
+              white 20%,
+              white 80%,
+              transparent);
+          mask: linear-gradient(180deg, transparent, white 20%, white 80%, transparent);
+        }
+    
+        .glow {
+          filter: drop-shadow(0 0 10px rgb(55, 185, 255));
+        }
   /* For IE, Edge and Firefox */
   .scrollbar-hide {
     -ms-overflow-style: none;

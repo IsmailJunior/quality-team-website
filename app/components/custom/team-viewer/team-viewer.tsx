@@ -2,6 +2,7 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { Particles } from "@/app/components/magicui/particles";
 import { Switcher } from "@/app/components/custom/team-viewer/switcher";
 import { Profile } from "@/app/components/custom/team-viewer/profile";
 import { Biography } from "@/app/components/custom/team-viewer/biography";
@@ -147,7 +148,7 @@ export const TeamViewer: FC = () => {
 			<div className="flex flex-col-reverse md:flex-row md:justify-between mx-auto w-full max-w-2xl">
 				<div className="flex text-white space-y-6 flex-col items-center w-full">
 					<button onClick={onChevronClick}>
-						<ChevronUp />
+						<ChevronUp size={30} />
 					</button>
 					<Switcher
 						data={elements}
@@ -157,10 +158,20 @@ export const TeamViewer: FC = () => {
 						currentProfile={currentProfile}
 					/>
 					<button>
-						<ChevronDown onClick={onChevronClick} />
+						<ChevronDown size={30} onClick={onChevronClick} />
 					</button>
 				</div>
 				<div className="relative">
+					<Particles
+						className="absolute glow inset-0"
+						quantity={300}
+						ease={80}
+						color="#0072ff"
+						size={0.9}
+						vx={0.1}
+						vy={-0.1}
+						refresh
+					/>
 					<Profile image={currentProfile?.thumnail} />
 					<Biography
 						title={currentProfile?.title}
