@@ -10,13 +10,26 @@ import { Biography } from "@/app/components/custom/team-viewer/biography";
 
 export const TeamViewer: FC = () => {
 	const { t } = useTranslation();
-	const { onChevronClick, onProfileClick, elements, currentProfile } =
-		useSliderController();
+	const {
+		onChevronClick,
+		onProfileClick,
+		elements,
+		currentProfile,
+		onMouseOver,
+	} = useSliderController();
 	return (
 		<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">
 			<h1 className="text-white text-4xl mt-16">{t("crew.headline")}</h1>
 			<div className="flex flex-col-reverse md:flex-row md:justify-between mx-auto w-full max-w-2xl">
-				<div className="flex text-white space-y-6 flex-col items-center w-full">
+				<div
+					onMouseEnter={() => {
+						onMouseOver(true);
+					}}
+					onMouseLeave={() => {
+						onMouseOver(false);
+					}}
+					className="flex text-white space-y-6 flex-col items-center w-full"
+				>
 					<button onClick={onChevronClick}>
 						<ChevronUp size={30} />
 					</button>

@@ -20,7 +20,7 @@ export type profileType = {
 export type switcherType = {
 	data: elementType[];
 	currentProfile: elementType | undefined;
-	onValueFromChild: (profile: elementType) => {};
+	onValueFromChild: ( profile: elementType ) => {};
 };
 
 export type carouselIndicatorType = {
