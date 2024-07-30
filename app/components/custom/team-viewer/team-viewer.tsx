@@ -86,7 +86,7 @@ export const TeamViewer: FC = () => {
 	const onProfileClick = (profile: elementType) => {
 		setCurrentProfile(profile);
 	};
-	const onTopChevronClick = () => {
+	const onChevronClick = () => {
 		let prevState = [...elements];
 		let nextElementId = prevState
 			.filter(element => element.active === true)
@@ -146,7 +146,7 @@ export const TeamViewer: FC = () => {
 			<h1 className="text-white text-4xl mt-16">CAST & CREW</h1>
 			<div className="flex flex-col-reverse md:flex-row md:justify-between mx-auto w-full max-w-2xl">
 				<div className="flex text-white space-y-6 flex-col items-center w-full">
-					<button onClick={onTopChevronClick}>
+					<button onClick={onChevronClick}>
 						<ChevronUp />
 					</button>
 					<Switcher
@@ -157,7 +157,7 @@ export const TeamViewer: FC = () => {
 						currentProfile={currentProfile}
 					/>
 					<button>
-						<ChevronDown />
+						<ChevronDown onClick={onChevronClick} />
 					</button>
 				</div>
 				<div className="relative">
