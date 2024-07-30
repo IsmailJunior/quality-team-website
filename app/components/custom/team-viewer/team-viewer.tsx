@@ -1,5 +1,6 @@
 "use client";
 import type { FC } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useSliderController } from "@/app/hooks/slider-controller.hook";
 import { Particles } from "@/app/components/magicui/particles";
@@ -8,11 +9,12 @@ import { Profile } from "@/app/components/custom/team-viewer/profile";
 import { Biography } from "@/app/components/custom/team-viewer/biography";
 
 export const TeamViewer: FC = () => {
+	const { t } = useTranslation();
 	const { onChevronClick, onProfileClick, elements, currentProfile } =
 		useSliderController();
 	return (
 		<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">
-			<h1 className="text-white text-4xl mt-16">CAST & CREW</h1>
+			<h1 className="text-white text-4xl mt-16">{t("crew.headline")}</h1>
 			<div className="flex flex-col-reverse md:flex-row md:justify-between mx-auto w-full max-w-2xl">
 				<div className="flex text-white space-y-6 flex-col items-center w-full">
 					<button onClick={onChevronClick}>

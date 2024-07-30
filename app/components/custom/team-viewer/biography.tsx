@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { biographyType } from "@/app/types/homePage.types";
+import type { biographyType } from "@/app/types/homePage.type";
 
 export const Biography: FC<biographyType> = ({ title, description }) => {
 	return (

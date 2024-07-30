@@ -8,8 +8,8 @@
 			"coffees": "القهوة"
 		}
 	},
-	"castAndCrew": {
-		"headline": "طاقم التمثيل والإنتاج",
+	"crew": {
+		"headline": "الطاقم",
 		"members": {
 			"emilia_clarke": {
 				"title": "إميليا كلارك",

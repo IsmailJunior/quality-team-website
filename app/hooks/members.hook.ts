@@ -14,8 +14,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.EMILIA_CLARKE.src,
 			picture: "",
-			title: t("castAndCrew.members.emilia_clarke.title"),
-			description: t("castAndCrew.members.emilia_clarke.description"),
+			title: t("crew.members.emilia_clarke.title"),
+			description: t("crew.members.emilia_clarke.description"),
 		},
 		{
 			id: 2,
@@ -23,8 +23,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.KIKOLAJ_COSTER_WALDAU.src,
 			picture: "",
-			title: t("castAndCrew.members.nikolaj_coster.title"),
-			description: t("castAndCrew.members.nikolaj_coster.description"),
+			title: t("crew.members.nikolaj_coster.title"),
+			description: t("crew.members.nikolaj_coster.description"),
 		},
 		{
 			id: 3,
@@ -32,8 +32,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.KIT_HARINGTON.src,
 			picture: "",
-			title: t("castAndCrew.members.kit_harington.title"),
-			description: t("castAndCrew.members.kit_harington.description"),
+			title: t("crew.members.kit_harington.title"),
+			description: t("crew.members.kit_harington.description"),
 		},
 		{
 			id: 4,
@@ -41,8 +41,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.PETER_DINKLAGE.src,
 			picture: "",
-			title: t("castAndCrew.members.peter_dinklage.title"),
-			description: t("castAndCrew.members.peter_dinklage.description"),
+			title: t("crew.members.peter_dinklage.title"),
+			description: t("crew.members.peter_dinklage.description"),
 		},
 		{
 			id: 5,
@@ -50,8 +50,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.SOPHIE_TURNER.src,
 			picture: "",
-			title: t("castAndCrew.members.sophie_turner.title"),
-			description: t("castAndCrew.members.sophie_turner.description"),
+			title: t("crew.members.sophie_turner.title"),
+			description: t("crew.members.sophie_turner.description"),
 		},
 		{
 			id: 6,
@@ -59,8 +59,8 @@ export const useMembers = () =>
 			active: true,
 			thumnail: TEAM.IAIN_GLEN.src,
 			picture: "",
-			title: t("castAndCrew.members.iain_glen.title"),
-			description: t("castAndCrew.members.iain_glen.description"),
+			title: t("crew.members.iain_glen.title"),
+			description: t("crew.members.iain_glen.description"),
 		},
 	];
 	const [ elements, setElements ] = useState<elementType[]>( DATA );

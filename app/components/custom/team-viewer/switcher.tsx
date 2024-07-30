@@ -1,6 +1,6 @@
 "use client";
 import type { FC } from "react";
-import type { switcherType, elementType } from "@/app/types/homePage.types";
+import type { switcherType, elementType } from "@/app/types/homePage.type";
 import { cn } from "@/app/lib/utils";
 
 export const Switcher: FC<switcherType> = ({
