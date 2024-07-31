@@ -72,6 +72,14 @@
     display: none;
   }
 
+    .edge-horizontal {
+      -webkit-mask: linear-gradient(90deg,
+          transparent,
+          white 20%,
+          white 80%,
+          transparent);
+      mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
         .edge {
           -webkit-mask: linear-gradient(180deg,
               transparent,

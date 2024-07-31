@@ -6,7 +6,7 @@ import { useMembers } from '@/app/hooks/members.hook';
 
 export const useSliderController = () =>
 {
-	const interval = useInterval( () => onChevronClick(), 3000 );
+	const interval = useInterval( () => onChevronClick(), 4000 );
 	const { elements, setElements, currentProfile, setCurrentProfile, } = useMembers();
 	const [isMouseOver, setIsMouseOver] = useState(false)
 	const onMouseOver = (isMouseOver: boolean) =>

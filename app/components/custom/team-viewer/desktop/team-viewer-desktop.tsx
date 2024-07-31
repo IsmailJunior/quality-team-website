@@ -1,15 +1,13 @@
 "use client";
 import type { FC } from "react";
-import { useTranslation } from "react-i18next";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useSliderController } from "@/app/hooks/slider-controller.hook";
 import { Particles } from "@/app/components/magicui/particles";
-import { Switcher } from "@/app/components/custom/team-viewer/switcher";
-import { Profile } from "@/app/components/custom/team-viewer/profile";
-import { Biography } from "@/app/components/custom/team-viewer/biography";
+import { Switcher } from "@/app/components/custom/team-viewer/desktop/switcher";
+import { Profile } from "@/app/components/custom/team-viewer/desktop/profile";
+import { Biography } from "@/app/components/custom/team-viewer/desktop/biography";
 
 export const TeamViewer: FC = () => {
-	const { t } = useTranslation();
 	const {
 		onChevronClick,
 		onProfileClick,
@@ -18,9 +16,8 @@ export const TeamViewer: FC = () => {
 		onMouseOver,
 	} = useSliderController();
 	return (
-		<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">
-			<h1 className="text-white text-4xl mt-16">{t("crew.headline")}</h1>
-			<div className="flex flex-col-reverse md:flex-row md:justify-between mx-auto w-full max-w-2xl">
+		<div className="container flex flex-col pt-24 h-[750px] justify-center space-y-20 mx-auto w-full max-w-4xl">
+			<div className="flex flex-row justify-between mx-auto w-full max-w-2xl">
 				<div
 					onMouseEnter={() => {
 						onMouseOver(true);
