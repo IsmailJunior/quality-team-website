@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { dir } from "i18next";
-import initTranslations from "@/app/config/i18n";
-import { i18nConfig } from "@/app/config/i18nConfig";
-import { Providers } from "@/app/providers/providers";
-import { cn } from "@/app/lib/utils";
-import "@/app/styles/globals.css";
+import initTranslations from "@/app/_config/i18n";
+import { i18nConfig } from "@/app/_config/i18nConfig";
+import { Providers } from "@/app/_providers/providers";
+import { cn } from "@/app/_lib/utils";
+import "@/app/_styles/globals.css";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
