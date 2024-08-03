@@ -15,7 +15,7 @@ export const Team: FC = () => {
 		}
 	}, [isMinWidthMedium, mediaQuery]);
 	return (
-		<section className="h-[750px]">
+		<section className="h-[750px] bg-center bg-cover bg-no-repeat hue-rotate-60">
 			<h1 className="text-white text-4xl text-center mt-12 left-1/2 -translate-x-1/2 absolute">
 				{t("crew.headline")}
 			</h1>

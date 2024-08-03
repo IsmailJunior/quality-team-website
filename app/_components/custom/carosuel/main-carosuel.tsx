@@ -15,9 +15,9 @@ export const MainCarosuel: React.FC = () => {
 			naturalSlideWidth={100}
 			naturalSlideHeight={50}
 			totalSlides={MAIN_BANNER_IMAGES.length}
-			className="absolute left-1/2 -translate-x-1/2"
+			className="absolute left-1/2 -translate-x-1/2 w-full"
 		>
-			<Slider className="md:w-[1300px]">
+			<Slider className="absolute -z-10 w-screen md:w-[92%] mx-auto">
 				{MAIN_BANNER_IMAGES.map((bannerImage, index: number) => (
 					<Slide key={index} index={index}>
 						<div

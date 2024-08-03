@@ -9,7 +9,7 @@ export const TeamViewerMobile: FC = () => {
 	const { onProfileClick, elements, currentProfile } = useSliderController();
 	return (
 		<div
-			className="h-[750px] bg-cover bg-no-repeat bg-center flex items-end"
+			className="h-[700px] mt-12 bg-cover bg-no-repeat bg-top flex items-end"
 			style={{ backgroundImage: `url(${currentProfile?.picture})` }}
 		>
 			<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">

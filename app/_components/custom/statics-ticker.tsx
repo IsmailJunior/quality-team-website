@@ -9,10 +9,10 @@ type staticsTickerType = {
 export const StaticsTicker: FC<staticsTickerType> = ({ value, label }) => {
 	return (
 		<div className="flex flex-col items-center md:w-24 rtl:ml-4 ltr:mr-4">
-			<p className="whitespace-pre-wrap text-xl md:text-4xl tracking-tighter font-semibold">
+			<p className="whitespace-pre-wrap text-xl md:text-4xl tracking-tighter font-black text-rose-600">
 				<NumberTicker value={value} />
 			</p>
-			<p className="text-sm font-semibold">{label}</p>
+			<p className="text-sm font-bold">{label}</p>
 		</div>
 	);
 };

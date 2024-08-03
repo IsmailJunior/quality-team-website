@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { MainBanner } from "@/app/_components/widgets/main-banner";
 import { Team } from "@/app/_components/widgets/team";
+import { Library } from "@/app/_components/custom/library";
 import { HERO_STATIC } from "@/app/_constants/hero";
 
 const Home: NextPage<{ params: { locale: any } }> = async ({
@@ -19,7 +20,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 			</div>
 			<MainBanner locale={locale} />
 			<div className="relative">
-				<div className="absolute top-0 right-0 z-10">
+				<div className="absolute top-0 right-0 hue-rotate-60 z-10">
 					<Image
 						src={HERO_STATIC.PARTICLES_RIGHT.src}
 						alt="Brain"
@@ -27,7 +28,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 						width={300}
 					/>
 				</div>
-				<div className="absolute top-0 right-0 z-10">
+				<div className="absolute top-0 right-0 hue-rotate-60 z-10">
 					<Image
 						src={HERO_STATIC.GALAXY.src}
 						alt="Brain"
@@ -37,7 +38,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 				</div>
 			</div>
 			<Team />
-			<div className="absolute top-0 left-0">
+			<div className="absolute top-0 left-0 hue-rotate-60">
 				<Image
 					src={HERO_STATIC.PARTICLES_LEFT_TOP.src}
 					alt="Particles"
@@ -45,6 +46,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 					width={1000}
 				/>
 			</div>
+			<Library />
 		</div>
 	);
 };

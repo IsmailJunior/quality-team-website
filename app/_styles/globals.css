@@ -84,13 +84,13 @@
           -webkit-mask: linear-gradient(180deg,
               transparent,
               white 20%,
-              white 80%,
+              white 20%,
               transparent);
-          mask: linear-gradient(180deg, transparent, white 20%, white 80%, transparent);
+            mask: linear-gradient(180deg, transparent, white 10%, white 30%, transparent);
         }
     
         .glow {
-          filter: drop-shadow(0 0 10px rgb(55, 185, 255));
+          filter: drop-shadow(0 0 10px rgb(206, 6, 6));
         }
   /* For IE, Edge and Firefox */
   .scrollbar-hide {
