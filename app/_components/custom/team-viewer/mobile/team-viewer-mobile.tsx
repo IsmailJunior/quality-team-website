@@ -10,7 +10,7 @@ export const TeamViewerMobile: FC = () => {
 	return (
 		<div
 			className="h-[750px] bg-cover bg-no-repeat bg-center flex items-end"
-			style={{ backgroundImage: `url(${currentProfile?.thumnail})` }}
+			style={{ backgroundImage: `url(${currentProfile?.picture})` }}
 		>
 			<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">
 				<div className="flex flex-col mx-auto w-full max-w-2xl">

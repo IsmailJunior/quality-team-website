@@ -8,7 +8,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 	params: { locale },
 }) => {
 	return (
-		<div className="flex flex-col bg-zinc-950">
+		<div className="flex flex-col">
 			<div className="absolute top-0 right-0 z-10">
 				<Image
 					src={HERO_STATIC.BRAIN.src}

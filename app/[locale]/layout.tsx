@@ -5,6 +5,7 @@ import initTranslations from "@/app/_config/i18n";
 import { i18nConfig } from "@/app/_config/i18nConfig";
 import { Providers } from "@/app/_providers/providers";
 import { cn } from "@/app/_lib/utils";
+import { Logo } from "@/app/_components/custom/logo";
 import "@/app/_styles/globals.css";
 
 const fontSans = FontSans({
@@ -35,7 +36,7 @@ export default async function RootLayout({
 		<html lang={locale} dir={dir(locale)}>
 			<body
 				className={cn(
-					"min-h-screen bg-background font-sans antialiased",
+					"min-h-screen bg-zinc-950 font-sans antialiased",
 					fontSans.variable
 				)}
 			>
@@ -44,6 +45,7 @@ export default async function RootLayout({
 					locale={locale}
 					namespaces={i18Namespaces}
 				>
+					<Logo />
 					<main>{children}</main>
 				</Providers>
 			</body>

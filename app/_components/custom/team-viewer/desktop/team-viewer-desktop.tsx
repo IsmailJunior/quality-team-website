@@ -57,7 +57,7 @@ export const TeamViewer: FC = () => {
 						refresh
 					/>
 
-					<Profile image={currentProfile?.thumnail!} />
+					<Profile image={currentProfile?.picture!} />
 				</div>
 			</div>
 		</div>

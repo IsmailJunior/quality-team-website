@@ -26,7 +26,7 @@ export const Switcher: FC<switcherType> = ({
 							className={cn(
 								"bg-no-repeat bg-center bg-cover my-12 grayscale transition-all duration-300 rounded-full h-16 w-16 min-h-10 min-w-10 cursor-pointer",
 								currentProfile === element
-									? "scale-125 grayscale-0 outline outline-offset-4 outline-1 outline-sky-500 z-10"
+									? "scale-125 grayscale-0 outline outline-offset-4 outline-1 outline-white z-10"
 									: "scale-100"
 							)}
 							style={{

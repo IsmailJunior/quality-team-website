@@ -24,10 +24,10 @@ export const Switcher: FC<switcherType> = ({
 							onClick={() => sendValueToParent(element)}
 							key={element.id}
 							className={cn(
-								"bg-no-repeat bg-center bg-cover my-12 grayscale transition-all duration-300 rounded-full h-20 w-28 min-h-10 min-w-10 md:my-0 md:h-24 md:w-24 cursor-pointer",
+								"bg-no-repeat bg-center bg-cover grayscale transition-all duration-300 rounded-full min-h-10 min-w-10 h-20 w-20 cursor-pointer",
 								currentProfile === element
 									? "scale-125 grayscale-0 outline outline-offset-8 outline-1 outline-white"
-									: "scale-100"
+									: "scale-100 opacity-35"
 							)}
 							style={{
 								backgroundImage: `url(${element.thumnail})`,

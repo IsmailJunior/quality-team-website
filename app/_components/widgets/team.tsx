@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import { TeamViewer } from "@/app/_components/custom/team-viewer/desktop/team-viewer-desktop";
 import { TeamViewerMobile } from "@/app/_components/custom/team-viewer/mobile/team-viewer-mobile";
-
 export const Team: FC = () => {
 	const { t } = useTranslation();
 	const [isMinWidthMedium, setIsMinWidthMedium] = useState(false);
@@ -16,7 +15,7 @@ export const Team: FC = () => {
 		}
 	}, [isMinWidthMedium, mediaQuery]);
 	return (
-		<section className="h-[750px] bg-zinc-950">
+		<section className="h-[750px]">
 			<h1 className="text-white text-4xl text-center mt-12 left-1/2 -translate-x-1/2 absolute">
 				{t("crew.headline")}
 			</h1>
