@@ -2,7 +2,8 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { MainBanner } from "@/app/_components/widgets/main-banner";
 import { Team } from "@/app/_components/widgets/team";
-import { Library } from "@/app/_components/custom/library";
+import { Library } from "@/app/_components/widgets/library";
+import { Showcase } from "@/app/_components/widgets/showcase";
 import { HERO_STATIC } from "@/app/_constants/hero";
 
 const Home: NextPage<{ params: { locale: any } }> = async ({
@@ -46,6 +47,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 					width={1000}
 				/>
 			</div>
+			<Showcase />
 			<Library />
 		</div>
 	);

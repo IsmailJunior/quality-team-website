@@ -11,20 +11,18 @@ const images = Array.from({ length: 24 }, (_, i) => {
 
 export const Galary: FC = () => {
 	return (
-		<section>
-			<div className="grid grid-cols-3 md:grid-cols-6 pt-24 edge">
-				{images.map((imageUrl, idx) => (
-					<BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView>
-						<Image
-							className="mb-4 w-56 rounded-lg"
-							src={imageUrl}
-							alt={`Random stock image ${idx + 1}`}
-							width={150}
-							height={150}
-						/>
-					</BlurFade>
-				))}
-			</div>
-		</section>
+		<div className="grid grid-cols-3 md:grid-cols-6 gap-2 pt-24 edge">
+			{images.map((imageUrl, idx) => (
+				<BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView>
+					<Image
+						className="mb-4 w-80 rounded-lg"
+						src={imageUrl}
+						alt={`Random stock image ${idx + 1}`}
+						width={150}
+						height={150}
+					/>
+				</BlurFade>
+			))}
+		</div>
 	);
 };
