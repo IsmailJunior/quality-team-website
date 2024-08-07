@@ -5,7 +5,7 @@ import initTranslations from "@/app/_config/i18n";
 import { i18nConfig } from "@/app/_config/i18nConfig";
 import { Providers } from "@/app/_providers/providers";
 import { cn } from "@/app/_lib/utils";
-import { Logo } from "@/app/_components/custom/logo";
+import { Navigation } from "@/app/_components/custom/navigation/navigation";
 import { Footer } from "@/app/_components/custom/footer";
 import "@/app/_styles/globals.css";
 
@@ -46,7 +46,7 @@ export default async function RootLayout({
 					locale={locale}
 					namespaces={i18Namespaces}
 				>
-					<Logo />
+					<Navigation />
 					<main>{children}</main>
 					<Footer />
 				</Providers>

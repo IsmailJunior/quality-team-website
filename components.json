@@ -5,15 +5,15 @@
 	"tsx": true,
 	"tailwind": {
 		"config": "tailwind.config.ts",
-		"css": "app/styles/globals.css",
+		"css": "app/_styles/globals.css",
 		"baseColor": "zinc",
 		"cssVariables": true,
 		"prefix": ""
 	},
 	"aliases": {
-		"components": "@/app/components",
-		"utils": "@/app/lib/utils",
-		"ui": "@/app/components/ui",
-		"magicui": "@/app/components/magicui"
+		"components": "@/app/_components",
+		"utils": "@/app/_lib/utils",
+		"ui": "@/app/_components/ui",
+		"magicui": "@/app/_components/magicui"
 	}
 }

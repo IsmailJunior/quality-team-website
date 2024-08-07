@@ -2,12 +2,12 @@
 import { useEffect, useState} from 'react';
 import { useInterval} from '@mantine/hooks';
 import type { elementType } from '@/app/_types/homePage.type';
-import { useMembers } from '@/app/_hooks/members.hook';
+import { useServices } from '@/app/_hooks/services.hook';
 
 export const useSliderController = () =>
 {
 	const interval = useInterval( () => onChevronClick(), 4000 );
-	const { elements, setElements, currentProfile, setCurrentProfile, } = useMembers();
+	const { elements, setElements, currentProfile, setCurrentProfile, } = useServices();
 	const [isMouseOver, setIsMouseOver] = useState(false)
 	const onMouseOver = (isMouseOver: boolean) =>
 	{

@@ -1,12 +1,13 @@
 import type { FC } from "react";
-import { MainCarosuel } from "@/app/_components/custom/carosuel/main-carosuel";
-import { MainCoaster } from "@/app/_components/custom/main-coaster";
-import { MAIN_BANNER_IMAGES } from "@/app/_constants/carosuelImages";
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("@/app/_components/custom/hero"), {
+	ssr: false,
+});
+
 export const MainBanner: FC<{ locale: any }> = ({ locale }) => {
 	return (
-		<section className="relative flex mt-44 h-[720px]">
-			<MainCarosuel data={MAIN_BANNER_IMAGES} />
-			<MainCoaster locale={locale} />
+		<section className="relative h-[300px] lg:h-[720px] flex mt-12">
+			<Hero />
 		</section>
 	);
 };
