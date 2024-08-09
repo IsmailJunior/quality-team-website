@@ -28,7 +28,8 @@
 		".next/types/**/*.ts",
 		"app/components/magicui/number-ticker.jsx",
 		"middleware.ts",
-		"app/components/custom/vertical-carosuel/vertical-carosuel.jsx"
+		"app/components/custom/vertical-carosuel/vertical-carosuel.jsx",
+		"env.example"
 	],
 	"exclude": ["node_modules"]
 }

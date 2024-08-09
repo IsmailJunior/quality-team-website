@@ -33,10 +33,10 @@ export const ContactUs: FC = () => {
 	async function onSubmit(values: z.infer<typeof formSchema>) {
 		try {
 			const result = await send(
-				"service_ojofyv6",
-				"template_3myggmh",
+				process.env.SERVICE_ID as string,
+				process.env.TEMPLATE_ID as string,
 				values,
-				"PXUaPhRxenWs9DCqa"
+				process.env.EMAIL_PUBLIC_KEY as string
 			);
 			console.log(result);
 			console.log(values);
