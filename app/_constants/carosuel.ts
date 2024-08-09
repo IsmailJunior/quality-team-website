@@ -6,8 +6,13 @@ import BEHIND_THE_SCENE_CAMERA_STICK_MAN from '@/public/static/desktop/behind_th
 import BEHIND_THE_SCENE_CHEMICAL_GUY from '@/public/static/desktop/behind_the_scene_chemical_guy.png';
 import BEHIND_THE_SCENE_GREETING from '@/public/static/desktop/behind_the_scene_greeting.png';
 import BEHIND_THE_SCENE_TWO_CAMERA_MEN from '@/public/static/desktop/behind_the_scene_two_camera_men.png';
-export const CAROSUEL = [ BEHIND_THE_SCENE_GIRL,
+import STUDENTS from '@/public/static/desktop/students.png';
+import STUDENT_ON_TABLET from '@/public/static/desktop/student_on_tablet.jpg'
+export const CAROSUEL = [
+	STUDENTS,
+	BEHIND_THE_SCENE_GIRL,
 	BEHIND_THE_SCENE_CAMERA,
+	STUDENT_ON_TABLET,
 	BEHIND_THE_SCENE_CAMERA_MAN_DOB,
 	BEHIND_THE_SCENE_CAMERA_SCREEN,
 	BEHIND_THE_SCENE_CAMERA_STICK_MAN,

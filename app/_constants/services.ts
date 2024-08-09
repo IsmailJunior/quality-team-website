@@ -1,5 +1,3 @@
-
-import POSE_MAN from '@/public/static/desktop/pose_man.png';
 import GRAPHIC_DESIGN from '@/public/static/desktop/graphic-design.png';
 import CONTENT_CREATION from '@/public/static/desktop/content-creation.png';
 import VIDEO_EDITING from '@/public/static/desktop/video-editing.png';

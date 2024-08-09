@@ -1,43 +1,14 @@
 "use client";
-import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
+import { useNavigation } from "@/app/_hooks/navigation";
 import { Logo } from "@/app/_components/custom/logo";
 import { AlignJustify } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navigation = () => {
 	const { t } = useTranslation();
-	const [isOpen, setIsOpen] = useState(false);
-	const [isMinWidthMedium, setIsMinWidthMedium] = useState(false);
-	const mediaQuery = useMediaQuery({ query: `(max-width: 1000px)` });
-	const onMenuClicked = () => {
-		isOpen ? setIsOpen(false) : setIsOpen(true);
-	};
-	const resetMenu = () => {
-		setIsOpen(false);
-	};
-
-	const handleScroll = () => {
-		const scrollPosition = window.scrollY;
-		if (scrollPosition > 0) {
-			resetMenu();
-		}
-	};
-	useEffect(() => {
-		if (mediaQuery !== isMinWidthMedium) {
-			setIsMinWidthMedium(mediaQuery);
-		}
-		if (isMinWidthMedium) {
-			resetMenu();
-		}
-		handleScroll();
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [mediaQuery, isMinWidthMedium]);
+	const { isOpen, resetMenu, onMenuClicked } = useNavigation();
 	return (
 		<AnimatePresence>
 			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16 px-6">
