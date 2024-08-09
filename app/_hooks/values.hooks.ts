@@ -1,7 +1,7 @@
 'use client';
 import { useTranslation } from 'react-i18next';
 import { ChartPie, EyeIcon, Clapperboard } from 'lucide-react';
-import type { valueType } from '@/app/_types/home-page.type';
+import type { valueType } from '@/app/_types/home-page';
 
 export const useValues = () =>
 {

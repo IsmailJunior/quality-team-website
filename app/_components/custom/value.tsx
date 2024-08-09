@@ -1,6 +1,6 @@
 "use client";
 import type { FC } from "react";
-import type { valueType } from "@/app/_types/home-page.type";
+import type { valueType } from "@/app/_types/home-page";
 export const Value: FC<valueType> = ({ headline, description, Icon }) => {
 	return (
 		<div className="flex flex-col justify-center items-center p-5 lg:border space-y-2">

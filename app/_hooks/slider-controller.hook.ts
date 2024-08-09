@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState} from 'react';
 import { useInterval} from '@mantine/hooks';
-import type { elementType } from '@/app/_types/home-page.type';
+import type { elementType } from '@/app/_types/home-page';
 import { useServices } from '@/app/_hooks/services.hook';
 
 export const useSliderController = () =>

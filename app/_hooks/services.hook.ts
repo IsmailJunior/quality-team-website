@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { elementType } from '@/app/_types/home-page.type';
+import type { elementType } from '@/app/_types/home-page';
 import { SERVICES } from '@/app/_constants/services';
 
 export const useServices = () =>

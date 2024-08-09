@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { profileType } from "@/app/_types/home-page.type";
+import type { profileType } from "@/app/_types/home-page";
 import Image from "next/image";
 
 export const Profile: FC<profileType> = ({ image }) => {
