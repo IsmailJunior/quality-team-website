@@ -1,4 +1,6 @@
+import { LucideProps } from 'lucide-react';
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
 export type elementType = {
 	id: number;
@@ -28,3 +30,10 @@ export type switcherType = {
 export type carouselIndicatorType = {
 	items: number;
 };
+export type valueType = {
+	id: number;
+	headline: string;
+	description: string;
+	Icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+};
+

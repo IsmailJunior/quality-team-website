@@ -1,39 +1,22 @@
 {
-	"mainBanner": {
-		"headline": "Qaulity Team",
-		"description": "Qaulity Team can make you fucking ad even more boring.",
-		"numbers": {
-			"team": "Team",
-			"members": "Members",
-			"coffees": "Coffees"
-		}
-	},
 	"services": {
 		"headline": "Services",
 		"service": {
-			"emilia_clarke": {
-				"title": "Emilia Clarke",
+			"graphic_design": {
+				"title": "Graphic Design",
 				"description": "Emilia Isobel Euphemia Rose Clarke (born October 23, 1986) is a British actress, best known for her portrayal as Daenerys Targaryen in Game of Thrones. She has received various accolades, including an Empire Award, a Saturn Award and four Primetime Emmy Award nominations. In 2019, Time magazine named Clarke one of the 100 most influential people in the world."
 			},
-			"nikolaj_coster": {
-				"title": "Nikolaj Coster-Waldau",
+			"content_creation": {
+				"title": "Content Creation",
 				"description": "Nikolaj William Coster-Waldau (born 27 July 1970) is a Danish actor and producer. He graduated from the Danish National School of Performing Arts in Copenhagen in 1993, and had his breakthrough role in Denmark with the film Nightwatch (1994). He played Jaime Lannister in the HBO fantasy drama series Game of Thrones, for which he received two Primetime Emmy Award nominations for Outstanding Supporting Actor in a Drama Series."
 			},
-			"kit_harington": {
-				"title": "Kit Harington",
+			"marketing": {
+				"title": "Marketing",
 				"description": "Christopher Catesby 'Kit' Harington (born December 26, 1986) is an English actor. He is known for his role as Jon Snow in the HBO fantasy television series Game of Thrones (2011–2019), for which he received nominations for a Golden Globe Award and two Primetime Emmy Awards."
 			},
-			"peter_dinklage": {
-				"title": "Peter Dinklage",
+			"video_editing": {
+				"title": "Video Editing",
 				"description": "Peter Dinklage is an American actor. Since his breakout role in The Station Agent (2003), he has appeared in numerous films and theatre plays. Since 2011, Dinklage has portrayed Tyrion Lannister in the HBO series Game of Thrones. For this he won an Emmy for Outstanding Supporting Actor in a Drama Series and a Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film in 2011. Peter Hayden Dinklage was born in Morristown, New Jersey,"
-			},
-			"sophie_turner": {
-				"title": "Sophie Turner",
-				"description": "Sophie Belinda Jonas (née Turner; born 21 February 1996) is an English actress. She made her acting debut as Sansa Stark on the HBO epic fantasy television series Game of Thrones (2011–2019), for which she received a Primetime Emmy Award nomination for the Outstanding Supporting Actress in a Drama Series in 2019."
-			},
-			"iain_glen": {
-				"title": "Iain Glen",
-				"description": "Iain Alan Sutherland Glen (born 24 June 1961) is a Scottish actor. Glen is best known for his roles as Dr. Alexander Isaacs/Tyrant in three films of the Resident Evil film series (2004–2016) and as Ser Jorah Mormont in the HBO fantasy television series Game of Thrones (2011–2019). "
 			}
 		}
 	}

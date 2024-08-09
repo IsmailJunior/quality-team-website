@@ -1,39 +1,22 @@
 {
-	"mainBanner": {
-		"headline": "كوالتي تيم",
-		"description": "للاعلانات المملة",
-		"numbers": {
-			"team": "الفريق",
-			"members": "الاعضاء",
-			"coffees": "القهوة"
-		}
-	},
 	"services": {
 		"headline": "الخدمات",
 		"service": {
-			"emilia_clarke": {
-				"title": "إميليا كلارك",
-				"description": "إميليا إيزوبيل يوفيميا روز كلارك (ولدت في 23 أكتوبر 1986) هي ممثلة بريطانية، اشتهرت بدورها كدينيرس تارجارين في مسلسل لعبة العروش. حصلت على العديد من الجوائز، بما في ذلك جائزة إمباير، جائزة زحل، وترشيحات لأربع جوائز إيمي برايم تايم. في عام 2019، أدرجتها مجلة تايم كواحدة من أكثر 100 شخص تأثيراً في العالم."
+			"graphic_design": {
+				"title": "تصميم البصري",
+				"description": "Emilia Isobel Euphemia Rose Clarke (born October 23, 1986) is a British actress, best known for her portrayal as Daenerys Targaryen in Game of Thrones. She has received various accolades, including an Empire Award, a Saturn Award and four Primetime Emmy Award nominations. In 2019, Time magazine named Clarke one of the 100 most influential people in the world."
 			},
-			"nikolaj_coster": {
-				"title": "نيكولاج كوستر-فالداو",
-				"description": "نيكولاج ويليام كوستر-فالداو (ولد في 27 يوليو 1970) هو ممثل ومنتج دنماركي. تخرج من المدرسة الوطنية الدنماركية للفنون الأدائية في كوبنهاغن عام 1993، وكان له دور الاختراق في الدنمارك مع فيلم نايتواتش (1994). لعب دور جايمي لانستر في مسلسل الدراما الخيالية لعبة العروش من HBO، والذي حصل بسببه على ترشيحين لجائزة إيمي برايم تايم لأفضل ممثل مساعد في مسلسل درامي."
+			"content_creation": {
+				"title": "انشاء المحتوى",
+				"description": "Nikolaj William Coster-Waldau (born 27 July 1970) is a Danish actor and producer. He graduated from the Danish National School of Performing Arts in Copenhagen in 1993, and had his breakthrough role in Denmark with the film Nightwatch (1994). He played Jaime Lannister in the HBO fantasy drama series Game of Thrones, for which he received two Primetime Emmy Award nominations for Outstanding Supporting Actor in a Drama Series."
 			},
-			"kit_harington": {
-				"title": "كيت هارينغتون",
-				"description": "كريستوفر كاتسبي 'كيت' هارينغتون (ولد في 26 ديسمبر 1986) هو ممثل إنجليزي. يشتهر بدوره كجون سنو في مسلسل الخيال التلفزيوني لعبة العروش (2011-2019) من HBO، والذي تلقى بسببه ترشيحات لجائزة غولدن غلوب وجائزتي إيمي برايم تايم."
+			"marketing": {
+				"title": "التسويق",
+				"description": "Christopher Catesby 'Kit' Harington (born December 26, 1986) is an English actor. He is known for his role as Jon Snow in the HBO fantasy television series Game of Thrones (2011–2019), for which he received nominations for a Golden Globe Award and two Primetime Emmy Awards."
 			},
-			"peter_dinklage": {
-				"title": "بيتر دينكلاج",
-				"description": "بيتر دينكلاج هو ممثل أمريكي. منذ دوره المتميز في فيلم The Station Agent (2003)، ظهر في العديد من الأفلام والمسرحيات. منذ عام 2011، يجسد دينكلاج دور تيريون لانستر في مسلسل لعبة العروش من HBO. فاز بجائزة إيمي لأفضل ممثل مساعد في مسلسل درامي وجائزة غولدن غلوب لأفضل ممثل مساعد - مسلسل، ميني سيريز أو فيلم تلفزيوني في عام 2011. ولد بيتر هايدن دينكلاج في موريس تاون، نيو جيرسي."
-			},
-			"sophie_turner": {
-				"title": "صوفي ترنر",
-				"description": "صوفي بيليندا جوناس (ني ترنر؛ ولدت في 21 فبراير 1996) هي ممثلة إنجليزية. ظهرت لأول مرة في التمثيل بدور سانسا ستارك في مسلسل الفانتازيا الملحمية لعبة العروش (2011-2019) من HBO، والتي حصلت بسببه على ترشيح لجائزة إيمي برايم تايم لأفضل ممثلة مساعدة في مسلسل درامي في عام 2019."
-			},
-			"iain_glen": {
-				"title": "إيان غلين",
-				"description": "إيان آلان ساذرلاند غلين (ولد في 24 يونيو 1961) هو ممثل اسكتلندي. يشتهر غلين بأدواره كدكتور ألكسندر إيزاكس/تيرانت في ثلاثة أفلام من سلسلة أفلام Resident Evil (2004-2016) وكسر جوراه مورمونت في مسلسل الفانتازيا التلفزيوني لعبة العروش (2011-2019) من HBO."
+			"video_editing": {
+				"title": "الانتاج الفني",
+				"description": "Peter Dinklage is an American actor. Since his breakout role in The Station Agent (2003), he has appeared in numerous films and theatre plays. Since 2011, Dinklage has portrayed Tyrion Lannister in the HBO series Game of Thrones. For this he won an Emmy for Outstanding Supporting Actor in a Drama Series and a Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film in 2011. Peter Hayden Dinklage was born in Morristown, New Jersey,"
 			}
 		}
 	}

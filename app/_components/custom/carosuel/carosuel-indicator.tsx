@@ -1,6 +1,6 @@
 "use client";
 import type { FC } from "react";
-import type { carouselIndicatorType } from "@/app/_types/homePage.type";
+import type { carouselIndicatorType } from "@/app/_types/home-page.type";
 import { DotGroup } from "pure-react-carousel";
 import { cn } from "@/app/_lib/utils";
 

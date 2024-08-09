@@ -4,19 +4,16 @@ import ReactPlayer from "react-player";
 
 const Hero: FC = () => {
 	return (
-		<section className="absolute -top-56 lg:top-0 lg:relative">
+		<section className="absolute -top-56 flex justify-center items-center w-screen lg:top-0 lg:relative">
 			<ReactPlayer
-				width="100vw"
-				height="100vh"
+				width="120vw"
+				height="120vh"
 				loop
 				playing
 				muted
-				url="https://vimeo.com/995906418?share=copy"
+				url="https://vimeo.com/995906418"
 			/>
-			<source
-				src="https://vimeo.com/995906418?share=copy"
-				type="video/mp4"
-			/>
+			<source src="https://vimeo.com/995906418" type="video/mp4" />
 		</section>
 	);
 };

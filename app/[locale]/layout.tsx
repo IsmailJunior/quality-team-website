@@ -14,7 +14,7 @@ const fontSans = FontSans({
 	variable: "--font-sans",
 });
 
-const i18Namespaces = ["home"];
+const i18Namespaces = ["home", "common"];
 
 export const metadata: Metadata = {
 	title: "Qaulity Team",

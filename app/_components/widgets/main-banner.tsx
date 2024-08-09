@@ -6,7 +6,7 @@ const Hero = dynamic(() => import("@/app/_components/custom/hero"), {
 
 export const MainBanner: FC<{ locale: any }> = ({ locale }) => {
 	return (
-		<section className="relative h-[300px] lg:h-[720px] flex mt-12">
+		<section className="relative h-[300px] lg:h-[695px] overflow-hidden flex mt-12">
 			<Hero />
 		</section>
 	);
