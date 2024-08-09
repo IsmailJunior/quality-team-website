@@ -4,6 +4,7 @@ import { send } from "emailjs-com";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { formSchema } from "@/app/validations/contact";
 import { Button } from "@/app/_components/ui/button";
 import {
 	Form,
@@ -17,13 +18,6 @@ import {
 import { Input } from "@/app/_components/ui/input";
 import { Textarea } from "@/app/_components/ui/textarea";
 import { Map } from "@/app/_components/custom/map";
-
-const formSchema = z.object({
-	from_name: z.string().min(2).max(50),
-	to_name: z.string().min(2).max(50),
-	message: z.string().min(4),
-	reply_to: z.string().email(),
-});
 
 export const ContactUs: FC = () => {
 	const form = useForm<z.infer<typeof formSchema>>({
