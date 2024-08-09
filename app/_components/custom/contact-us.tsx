@@ -4,7 +4,7 @@ import { send } from "emailjs-com";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { formSchema } from "@/app/validations/contact";
+import { formSchema } from "@/app/_validations/contact";
 import { Button } from "@/app/_components/ui/button";
 import {
 	Form,
