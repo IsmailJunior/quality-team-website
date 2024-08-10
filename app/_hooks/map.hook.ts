@@ -16,8 +16,8 @@ useEffect(() => {
 				"marker"
 			)) as google.maps.MarkerLibrary;
 			const position = {
-				lat: 33.2596224,
-				lng: 44.4794469,
+				lat: 33.2890248,
+				lng: 44.3859185,
 			};
 			const mapOptions: google.maps.MapElementOptions = {
 				center: position,

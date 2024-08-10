@@ -10,6 +10,7 @@ export const MainCarosuel: React.FC<{ data: { src: string }[] }> = ({
 			isIntrinsicHeight
 			isPlaying
 			infinite
+			touchEnabled={false}
 			interval={4000}
 			naturalSlideWidth={100}
 			naturalSlideHeight={50}

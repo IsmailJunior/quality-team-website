@@ -1,8 +1,12 @@
 {
 	"navbar": {
-		"advertise": "Advertise with us",
+		"cta": "Talk with a professional",
 		"about_us": "About Us",
 		"home": "Home"
+	},
+	"carosuel": {
+		"headline": "Galary",
+		"description": "This is the Galary"
 	},
 	"footer": {
 		"about_us": {
@@ -15,6 +19,26 @@
 			"label": "Test",
 			"title": "TEST",
 			"description": "TEST"
+		},
+		"contact": {
+			"headline": "Contact Us:",
+			"fields": {
+				"name": {
+					"label": "Name",
+					"placeholder": "John",
+					"description": "Your name should be in arabic letters only."
+				},
+				"email": {
+					"label": "Email",
+					"placeholder": "example@mail.com",
+					"description": "Use the main email"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Write a breif of what your message about."
+				}
+			},
+			"action": "Submit"
 		},
 		"core_values": {
 			"headline": "Core Values",

@@ -9,9 +9,9 @@ export const Footer: FC = () => {
 			className="h-[500px] mt-16 bg-center bg-cover bg-no-repeat text-white"
 			style={{ backgroundImage: `url(${FOOTER_BACKGROUND.src})` }}
 		>
-			<section className="mx-24 space-y-12">
+			<section className="lg:mx-24 space-y-12">
 				<h1 className="text-xl">{t("common:footer.about_us.title")}</h1>
-				<p className="text-lg">
+				<p className="text-xs lg:text-lg">
 					{t("common:footer.about_us.description")}
 				</p>
 			</section>

@@ -1,11 +1,15 @@
+"use client";
 import type { FC } from "react";
+import { useTranslation } from "react-i18next";
 import { ContactUs } from "@/app/_components/custom/contact-us";
 
 export const ContactUsWidget: FC = () => {
+	const { t } = useTranslation();
+
 	return (
-		<section className="container mt-44 py-12 space-y-12">
+		<section className="lg:container lg:mt-44 py-12 space-y-12">
 			<h1 className="text-3xl text-center text-white font-semibold lg:text-start lg:text-5xl">
-				Contact Us:
+				{t("common:widgets.contact.headline")}
 			</h1>
 			<ContactUs />
 		</section>

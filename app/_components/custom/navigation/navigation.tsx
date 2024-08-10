@@ -11,7 +11,7 @@ export const Navigation = () => {
 	const { isOpen, resetMenu, onMenuClicked } = useNavigation();
 	return (
 		<AnimatePresence>
-			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16 px-6">
+			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
 				<motion.div
 					initial={{ height: 100 }}
 					animate={{ height: isOpen ? 360 : 100 }}
@@ -78,8 +78,9 @@ export const Navigation = () => {
 								<li>
 									<Link
 										onClick={resetMenu}
+										target="_blank"
 										className="lg:p-4 py-3 px-0 block transition-all lg:bg-white lg:text-zinc-950 hover:bg-zinc-950 lg:border hover:text-white hover:border-white"
-										href="/services"
+										href="tel:0774666251"
 									>
 										<motion.div
 											initial={{
@@ -93,7 +94,7 @@ export const Navigation = () => {
 											}}
 											viewport={{ once: false }}
 										>
-											{t("common:navbar.advertise")}
+											{t("common:navbar.cta")}
 										</motion.div>
 									</Link>
 								</li>

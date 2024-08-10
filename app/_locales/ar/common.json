@@ -1,9 +1,14 @@
 {
 	"navbar": {
-		"advertise": "اعلن معنا",
+		"cta": "اتصل بنا",
 		"about_us": "من نحن",
 		"home": "الرئيسية"
 	},
+	"carosuel": {
+		"headline": "Galary",
+		"description": "This is the Galary"
+	},
+
 	"footer": {
 		"about_us": {
 			"title": "من نحن؟",
@@ -15,6 +20,26 @@
 			"label": "اعلانات سينمائية",
 			"title": "بافضل جودة",
 			"description": "اعلن الان"
+		},
+		"contact": {
+			"headline": "تواصل معنا:",
+			"fields": {
+				"name": {
+					"label": "الاسم",
+					"placeholder": "اسمك",
+					"description": "الرجاء كتابة اسمك باللغة العربية"
+				},
+				"email": {
+					"label": "البريد الالكتروني",
+					"placeholder": "example@mail.com",
+					"description": "اكتب البريد الالكتروني الاساسي الذي تستخدمه"
+				},
+				"message": {
+					"label": "الرسالة",
+					"placeholder": "اكتب هنا مختصر عن الموضوع الذي تريد ان تناقشه."
+				}
+			},
+			"action": "ارسال"
 		},
 		"core_values": {
 			"headline": "الفوائد",

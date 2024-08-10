@@ -1,5 +1,7 @@
 "use client";
 import type { FC } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { send } from "emailjs-com";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -20,6 +22,8 @@ import { Textarea } from "@/app/_components/ui/textarea";
 import { Map } from "@/app/_components/custom/map";
 
 export const ContactUs: FC = () => {
+	const [isSending, setIsSending] = useState(false);
+	const { t } = useTranslation();
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -32,15 +36,15 @@ export const ContactUs: FC = () => {
 
 	async function onSubmit(values: z.infer<typeof formSchema>) {
 		try {
-			const result = await send(
-				process.env.SERVICE_ID as string,
-				process.env.TEMPLATE_ID as string,
+			setIsSending(true);
+			await send(
+				process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
+				process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
 				values,
-				process.env.EMAIL_PUBLIC_KEY as string
+				process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string
 			);
-			console.log(result);
-			console.log(values);
 			form.reset();
+			setIsSending(false);
 		} catch (error) {
 			console.log(error);
 		}
@@ -58,13 +62,25 @@ export const ContactUs: FC = () => {
 						name="from_name"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel className="text-white">
-									Name
+								<FormLabel className="text-white text-lg">
+									{t(
+										"common:widgets.contact.fields.name.label"
+									)}
 								</FormLabel>
 								<FormControl>
-									<Input placeholder="Name" {...field} />
+									<Input
+										className="text-lg"
+										placeholder={t(
+											"common:widgets.contact.fields.name.placeholder"
+										)}
+										{...field}
+									/>
 								</FormControl>
-								<FormDescription>Your name</FormDescription>
+								<FormDescription>
+									{t(
+										"common:widgets.contact.fields.name.description"
+									)}
+								</FormDescription>
 								<FormMessage />
 							</FormItem>
 						)}
@@ -74,17 +90,26 @@ export const ContactUs: FC = () => {
 						name="reply_to"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel className="text-white">
-									Email
+								<FormLabel className="text-white text-lg">
+									{t(
+										"common:widgets.contact.fields.email.label"
+									)}
 								</FormLabel>
 								<FormControl>
 									<Input
+										className="text-lg"
 										type="email"
-										placeholder="Your Email"
+										placeholder={t(
+											"common:widgets.contact.fields.email.placeholder"
+										)}
 										{...field}
 									/>
 								</FormControl>
-								<FormDescription>Your email</FormDescription>
+								<FormDescription>
+									{t(
+										"common:widgets.contact.fields.email.description"
+									)}
+								</FormDescription>
 								<FormMessage />
 							</FormItem>
 						)}
@@ -95,26 +120,31 @@ export const ContactUs: FC = () => {
 						name="message"
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel className="text-white">
-									Message
+								<FormLabel className="text-white text-lg">
+									{t(
+										"common:widgets.contact.fields.message.label"
+									)}
 								</FormLabel>
 								<FormControl>
 									<Textarea
-										placeholder="Message"
+										className="text-lg"
+										placeholder={t(
+											"common:widgets.contact.fields.message.placeholder"
+										)}
 										{...field}
 									/>
 								</FormControl>
-								<FormDescription>Your message</FormDescription>
 								<FormMessage />
 							</FormItem>
 						)}
 					/>
 
 					<Button
+						disabled={isSending ? true : false}
 						type="submit"
-						className="mt-4 bg-white border text-zinc-950 hover:text-white w-full"
+						className="mt-4 bg-white border  text-zinc-950 hover:text-white lg:w-full"
 					>
-						Submit
+						{t("common:widgets.contact.action")}
 					</Button>
 				</form>
 			</Form>

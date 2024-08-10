@@ -6,7 +6,7 @@ export const CarosuelWidget: FC = () => {
 	return (
 		<section className="relative h-[600px] w-full">
 			<MainCarosuel data={CAROSUEL} />
-			<MainCoaster locale={undefined} />
+			<MainCoaster />
 		</section>
 	);
 };

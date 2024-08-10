@@ -15,9 +15,7 @@ export const CTAFindMore: FC = () => {
 			<div className="flex flex-col mx-auto px-5 space-y-5">
 				<h1>+1,000 Reviews</h1>
 				<h1 className="text-4xl">AWARD WINNING AGENCY</h1>
-				<Button size="lg" variant="outline">
-					Advertise your bussiness
-				</Button>
+				<Button variant="outline">Advertise your bussiness</Button>
 			</div>
 		</div>
 	);

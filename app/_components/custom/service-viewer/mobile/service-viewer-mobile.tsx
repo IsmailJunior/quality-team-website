@@ -10,9 +10,12 @@ export const ServiceViewerMobile: FC = () => {
 	return (
 		<div
 			className="h-[700px] mt-12 bg-cover bg-no-repeat bg-top flex items-end"
-			style={{ backgroundImage: `url(${currentProfile?.picture})` }}
+			style={{
+				backgroundImage: `url(${currentProfile?.picture})`,
+				backgroundSize: 350,
+			}}
 		>
-			<div className="container flex flex-col items-center space-y-20 mx-auto w-full max-w-4xl">
+			<div className="flex flex-col items-center px-4 space-y-16 mx-auto w-full max-w-4xl">
 				<div className="flex flex-col mx-auto w-full max-w-2xl">
 					<div className="flex text-white space-y-6 flex-col items-center w-full">
 						<Biography

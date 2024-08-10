@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { bentoGalaryType } from "@/app/_types/about-us-page.type";
+import type { bentoGalaryType } from "@/app/_types/about-us-page";
 import Image from "next/image";
 import { Ear } from "lucide-react";
 import { BentoCard, BentoGrid } from "@/app/_components/magicui/bento-grid";
