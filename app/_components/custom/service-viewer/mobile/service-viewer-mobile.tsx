@@ -1,7 +1,6 @@
 "use client";
 import type { FC } from "react";
 import { useSliderController } from "@/app/_hooks/slider-controller.hook";
-import { Particles } from "@/app/_components/magicui/particles";
 import { Switcher } from "@/app/_components/custom/service-viewer/mobile/switcher";
 import { Biography } from "@/app/_components/custom/service-viewer/mobile/biography";
 
@@ -28,18 +27,6 @@ export const ServiceViewerMobile: FC = () => {
 								onProfileClick(element)
 							}
 							currentProfile={currentProfile}
-						/>
-					</div>
-					<div className="relative">
-						<Particles
-							className="absolute glow inset-0"
-							quantity={300}
-							ease={80}
-							color="#0072ff"
-							size={0.9}
-							vx={0.1}
-							vy={-0.1}
-							refresh
 						/>
 					</div>
 				</div>
