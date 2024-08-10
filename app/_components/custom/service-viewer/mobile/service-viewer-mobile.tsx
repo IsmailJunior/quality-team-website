@@ -3,6 +3,7 @@ import type { FC } from "react";
 import { useSliderController } from "@/app/_hooks/slider-controller.hook";
 import { Switcher } from "@/app/_components/custom/service-viewer/mobile/switcher";
 import { Biography } from "@/app/_components/custom/service-viewer/mobile/biography";
+import { elementType } from "@/app/_types/home-page";
 
 export const ServiceViewerMobile: FC = () => {
 	const { onProfileClick, elements, currentProfile } = useSliderController();
@@ -23,7 +24,7 @@ export const ServiceViewerMobile: FC = () => {
 						/>
 						<Switcher
 							data={elements}
-							onValueFromChild={async element =>
+							onValueFromChild={async (element: elementType) =>
 								onProfileClick(element)
 							}
 							currentProfile={currentProfile}
