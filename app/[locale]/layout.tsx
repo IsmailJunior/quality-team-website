@@ -5,6 +5,7 @@ import initTranslations from "@/app/_config/i18n";
 import { i18nConfig } from "@/app/_config/i18nConfig";
 import { Providers } from "@/app/_providers/providers";
 import { cn } from "@/app/_lib/utils";
+import { Toaster } from "@/app/_components/ui/toaster";
 import { Navigation } from "@/app/_components/custom/navigation/navigation";
 import { Footer } from "@/app/_components/custom/footer";
 import "@/app/_styles/globals.css";
@@ -48,6 +49,7 @@ export default async function RootLayout({
 				>
 					<Navigation />
 					<main>{children}</main>
+					<Toaster />
 					<Footer />
 				</Providers>
 			</body>
