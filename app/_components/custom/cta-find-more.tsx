@@ -6,6 +6,7 @@ export const CTAFindMore: FC = () => {
 	return (
 		<div className="flex items-center justify-between w-full py-28 lg:py-0">
 			<Image
+				unoptimized
 				className="hidden lg:block"
 				src={CTA_IMAGES.BEHIND_THE_SCENE_TWO_CAMERA_MEN}
 				width={800}

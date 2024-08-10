@@ -18,6 +18,7 @@ export const CTA: FC = () => {
 				</Button>
 			</div>
 			<Image
+				unoptimized
 				className="hidden lg:block"
 				src={CTA_IMAGES.STUDENT_ON_TABLET}
 				width={900}

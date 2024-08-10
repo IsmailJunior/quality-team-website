@@ -16,6 +16,7 @@ export const BentoGalary: FC = () => {
 			className: "col-span-3 lg:col-span-1 bg-zinc-950",
 			background: (
 				<Image
+					unoptimized
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA}
@@ -33,6 +34,7 @@ export const BentoGalary: FC = () => {
 			className: "col-span-3 lg:col-span-2",
 			background: (
 				<Image
+					unoptimized
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL}

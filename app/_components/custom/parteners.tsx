@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Marquee from "@/app/_components/magicui/marquee";
 import { FIRST } from "@/app/_constants/logos";
 
