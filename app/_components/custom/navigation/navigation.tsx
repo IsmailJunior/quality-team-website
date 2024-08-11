@@ -5,7 +5,7 @@ import { useNavigation } from "@/app/_hooks/navigation";
 import { Logo } from "@/app/_components/custom/logo";
 import { AlignJustify } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import LanguageChanger from "@/app/_components/custom/language-changer";
+import { LanguageChanger } from "@/app/_components/custom/language-changer";
 
 export const Navigation = () => {
 	const { t } = useTranslation();
@@ -20,9 +20,9 @@ export const Navigation = () => {
 					className="container overflow-hidden flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10"
 				>
 					<div className="flex-1 flex justify-between items-center">
-						<Link onClick={resetMenu} className="py-5" href="/">
+						<div className="py-5">
 							<LanguageChanger />
-						</Link>
+						</div>
 					</div>
 					<div className="flex-1 flex justify-between items-center">
 						<Link onClick={resetMenu} className="py-5" href="/">

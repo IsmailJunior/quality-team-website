@@ -7,7 +7,7 @@ const secondRow = FIRST.slice(FIRST.length / 2);
 
 export const Parteners = () => {
 	return (
-		<div className="relative flex h-[500px] w-full flex-col items-center justify-center bg-background md:shadow-xl">
+		<div className="relative flex h-[500px] overflow-hidden w-full flex-col items-center justify-center bg-background md:shadow-xl">
 			<Marquee pauseOnHover className="[--duration:20s]">
 				{firstRow.map((logo, index) => (
 					<div

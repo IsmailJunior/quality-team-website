@@ -9,7 +9,7 @@ export const BentoGalary: FC = () => {
 	const bentoElements: bentoGalaryType[] = [
 		{
 			Icon: Ear,
-			name: "Notifications",
+			name: "two",
 			description: "Get notified when something happens.",
 			href: "#",
 			cta: "Learn more",
@@ -27,7 +27,7 @@ export const BentoGalary: FC = () => {
 		},
 		{
 			Icon: Ear,
-			name: "Notifications",
+			name: "one",
 			description: "Get notified when something happens.",
 			href: "#",
 			cta: "Learn more",
@@ -66,7 +66,7 @@ export const BentoGalary: FC = () => {
 		},
 		{
 			Icon: Ear,
-			name: "Notifications",
+			name: "three",
 			description: "Get notified when something happens.",
 			href: "#",
 			cta: "Learn more",

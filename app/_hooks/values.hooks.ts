@@ -20,19 +20,19 @@ export const useValues = () =>
 			description: t('common:widgets.core_values.core_values.sales.description')
 		},
 		{
-			id: 2,
+			id: 3,
 			Icon: EyeIcon,
 			headline: 'Grateful',
 			description: "I choose to be grateful for this moment because..."
 		},
 		{
-			id: 2,
+			id: 4,
 			Icon: EyeIcon,
 			headline: 'Grateful',
 			description: "I choose to be grateful for this moment because..."
 		},
 		{
-			id: 2,
+			id: 5,
 			Icon: EyeIcon,
 			headline: 'Grateful',
 			description: "I choose to be grateful for this moment because..."
