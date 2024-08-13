@@ -1,6 +1,6 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import { ChartPie, EyeIcon, Clapperboard } from 'lucide-react';
+import { LifeBuoy, EyeIcon, Clapperboard, DraftingCompass, ChartPie} from 'lucide-react';
 import type { valueType } from '@/app/_types/home-page';
 
 export const useValues = () =>
@@ -15,27 +15,27 @@ export const useValues = () =>
 		},
 		{
 			id: 2,
-			Icon: ChartPie,
-			headline: t('common:widgets.core_values.core_values.sales.title'),
-			description: t('common:widgets.core_values.core_values.sales.description')
+			Icon: LifeBuoy,
+			headline: t('common:widgets.core_values.core_values.support.title'),
+			description: t('common:widgets.core_values.core_values.support.description')
 		},
 		{
 			id: 3,
-			Icon: EyeIcon,
-			headline: 'Grateful',
-			description: "I choose to be grateful for this moment because..."
+			Icon: DraftingCompass,
+			headline: t('common:widgets.core_values.core_values.brand.title'),
+			description: t('common:widgets.core_values.core_values.brand.description'),
 		},
 		{
 			id: 4,
-			Icon: EyeIcon,
-			headline: 'Grateful',
-			description: "I choose to be grateful for this moment because..."
+			Icon: ChartPie,
+			headline:  t('common:widgets.core_values.core_values.marketing.title'),
+			description:  t('common:widgets.core_values.core_values.marketing.description'),
 		},
 		{
 			id: 5,
 			Icon: EyeIcon,
-			headline: 'Grateful',
-			description: "I choose to be grateful for this moment because..."
+			headline:  t('common:widgets.core_values.core_values.accuracy.title'),
+			description:  t('common:widgets.core_values.core_values.accuracy.description'),
 		},
 	];
 	return {

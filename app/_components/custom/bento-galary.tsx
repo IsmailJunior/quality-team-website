@@ -1,18 +1,23 @@
+"use client";
 import type { FC } from "react";
-import type { bentoGalaryType } from "@/app/_types/about-us-page";
 import Image from "next/image";
-import { Ear } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Blend, Aperture, Flower, Brush } from "lucide-react";
+import type { bentoGalaryType } from "@/app/_types/about-us-page";
 import { BentoCard, BentoGrid } from "@/app/_components/magicui/bento-grid";
 import { BEHIND_THE_SCENE } from "@/app/_constants/bento";
 
 export const BentoGalary: FC = () => {
+	const { t } = useTranslation();
 	const bentoElements: bentoGalaryType[] = [
 		{
-			Icon: Ear,
-			name: "two",
-			description: "Get notified when something happens.",
-			href: "#",
-			cta: "Learn more",
+			Icon: Aperture,
+			name: t("common:widgets.behind_the_scene.gadget.title"),
+			description: t(
+				"common:widgets.behind_the_scene.gadget.description"
+			),
+			href: "https://www.facebook.com/profile.php?id=61551994790268",
+			cta: t("common:widgets.behind_the_scene.gadget.cta"),
 			className: "col-span-3 lg:col-span-1 bg-zinc-950",
 			background: (
 				<Image
@@ -20,17 +25,19 @@ export const BentoGalary: FC = () => {
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA}
-					alt="Test"
+					alt="Photo"
 					className="absolute [--duration:20s]"
 				/>
 			),
 		},
 		{
-			Icon: Ear,
-			name: "one",
-			description: "Get notified when something happens.",
-			href: "#",
-			cta: "Learn more",
+			Icon: Brush,
+			name: t("common:widgets.behind_the_scene.makeup.title"),
+			description: t(
+				"common:widgets.behind_the_scene.gadget.description"
+			),
+			href: "https://www.facebook.com/profile.php?id=61551994790268",
+			cta: t("common:widgets.behind_the_scene.gadget.cta"),
 			className: "col-span-3 lg:col-span-2",
 			background: (
 				<Image
@@ -38,17 +45,19 @@ export const BentoGalary: FC = () => {
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL}
-					alt="Test"
+					alt="Photo"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),
 		},
 		{
-			Icon: Ear,
-			name: "Notifications",
-			description: "Get notified when something happens.",
-			href: "#",
-			cta: "Learn more",
+			Icon: Blend,
+			name: t("common:widgets.behind_the_scene.photography.title"),
+			description: t(
+				"common:widgets.behind_the_scene.photography.description"
+			),
+			href: "https://www.facebook.com/profile.php?id=61551994790268",
+			cta: t("common:widgets.behind_the_scene.photography.cta"),
 			className: "col-span-3 lg:col-span-2",
 			background: (
 				<Image
@@ -59,17 +68,19 @@ export const BentoGalary: FC = () => {
 						BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_SCREEN.height
 					}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_SCREEN}
-					alt="Test"
+					alt="Photo"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),
 		},
 		{
-			Icon: Ear,
-			name: "three",
-			description: "Get notified when something happens.",
-			href: "#",
-			cta: "Learn more",
+			Icon: Flower,
+			name: t("common:widgets.behind_the_scene.envierement.title"),
+			description: t(
+				"common:widgets.behind_the_scene.envierement.description"
+			),
+			href: "https://www.facebook.com/profile.php?id=61551994790268",
+			cta: t("common:widgets.behind_the_scene.envierement.cta"),
 			className: "col-span-3 lg:col-span-1",
 			background: (
 				<Image
@@ -80,7 +91,7 @@ export const BentoGalary: FC = () => {
 						BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_MAN_DOB.height
 					}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_MAN_DOB}
-					alt="Test"
+					alt="Photo"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),

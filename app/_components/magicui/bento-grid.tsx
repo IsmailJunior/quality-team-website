@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 import { cn } from "@/app/_lib/utils";
 import { Button } from "@/app/_components/ui/button";
@@ -43,7 +44,7 @@ const BentoCard = ({
 	<div
 		key={name}
 		className={cn(
-			"group relative cursor-pointer col-span-3 flex flex-col justify-between overflow-hidden",
+			"group relative col-span-3 flex flex-col justify-between overflow-hidden",
 			// light styles
 			"bg-zinc-950 text-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
 			// dark styles
@@ -71,10 +72,10 @@ const BentoCard = ({
 				size="sm"
 				className="pointer-events-auto"
 			>
-				<a href={href}>
+				<Link target="_blank" href={href}>
 					{cta}
 					<ArrowRightIcon className="ml-2 h-4 w-4" />
-				</a>
+				</Link>
 			</Button>
 		</div>
 		<div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />

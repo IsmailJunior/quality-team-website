@@ -1,12 +1,12 @@
 {
 	"navbar": {
-		"cta": "Talk with a professional",
-		"about_us": "About Us",
+		"cta": "Contact us",
+		"about_us": "About us",
 		"home": "Home"
 	},
 	"carosuel": {
 		"headline": "Galary",
-		"description": "This is the Galary"
+		"description": "ّImages behind the scene and beyond"
 	},
 	"footer": {
 		"about_us": {
@@ -15,10 +15,17 @@
 		}
 	},
 	"widgets": {
+		"parteners": {
+			"headline": "Parteners"
+		},
 		"main_cta": {
-			"label": "Test",
-			"title": "TEST",
-			"description": "TEST"
+			"label": "Professional Cinema Commercials",
+			"title": "Conveys your vision in the best image and the highest quality",
+			"description": "Advertise Now"
+		},
+		"second_cta": {
+			"title": "Professional and creative photography cadres and modern and advanced photography equipment",
+			"description": "Talk to professionals"
 		},
 		"contact": {
 			"headline": "Contact Us:",
@@ -41,16 +48,51 @@
 			"action": "Submit"
 		},
 		"core_values": {
-			"headline": "Core Values",
+			"headline": "Features offered to the customer:",
 			"core_values": {
 				"quality": {
 					"title": "Quality",
-					"description": "Get world class quality from people know the market."
+					"description": "Get the highest quality at the lowest price"
 				},
-				"sales": {
-					"title": "Sales",
-					"description": "Grow your audince, and gain more sales."
+				"support": {
+					"title": "Support",
+					"description": "Be a star in your ad with the best cameras"
+				},
+				"brand": {
+					"title": "Build a brand",
+					"description": "Make your mark in the job market"
+				},
+				"marketing": {
+					"title": "Marketing Solutions",
+					"description": "Creative ideas and solutions to all marketing problems"
+				},
+				"accuracy": {
+					"title": "Supervision",
+					"description": "Supervising the details of the project"
 				}
+			}
+		},
+		"behind_the_scene": {
+			"headline": "Backstage",
+			"makeup": {
+				"title": "Pre-work",
+				"description": "Professional cinematic makeup",
+				"cta": "Learn more"
+			},
+			"gadget": {
+				"title": "Equipment",
+				"description": "Professional and modern imaging equipment",
+				"cta": "Learn more"
+			},
+			"envierement": {
+				"title": "The right place",
+				"description": "Suitable environment for in-action photography",
+				"cta": "Learn more"
+			},
+			"photography": {
+				"title": "Cinematic Vision",
+				"description": "Distinctive visualization",
+				"cta": "Learn more"
 			}
 		}
 	}
