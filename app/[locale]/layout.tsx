@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { dir } from "i18next";
 import initTranslations from "@/app/_config/i18n";
 import { i18nConfig } from "@/app/_config/i18nConfig";
@@ -53,6 +54,7 @@ export default async function RootLayout({
 					<Footer />
 				</Providers>
 			</body>
+			<GoogleAnalytics gaId="G-WDTC6N17X4" />
 		</html>
 	);
 }
