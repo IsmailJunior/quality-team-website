@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { ContactUsWidget } from "@/app/_components/widgets/contact-us-widget";
-import { CarosuelWidget } from "@/app/_components/widgets/carosuel-wigdet";
+import { AboutUsHeroWidget } from "@/app/_components/widgets/about-us-hero";
 const AboutUs: NextPage = () => {
 	return (
 		<div>
-			<CarosuelWidget />
+			<AboutUsHeroWidget />
 			<ContactUsWidget />
 		</div>
 	);

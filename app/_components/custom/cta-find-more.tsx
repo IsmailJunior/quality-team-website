@@ -17,8 +17,8 @@ export const CTAFindMore: FC = () => {
 				height={800}
 				alt="Singer"
 			/>
-			<div className="flex flex-col justify-center items-center mx-auto px-5 space-y-5">
-				<h1 className="text-4xl text-center">
+			<div className="flex flex-col justify-center items-center mx-auto lg:items-start lg:mx-0 px-5 space-y-5">
+				<h1 className="text-4xl text-center lg:text-start">
 					{t("common:widgets.second_cta.title")}
 				</h1>
 				<Link href="/about-us">

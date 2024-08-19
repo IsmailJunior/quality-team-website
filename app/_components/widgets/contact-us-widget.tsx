@@ -7,7 +7,7 @@ export const ContactUsWidget: FC = () => {
 	const { t } = useTranslation();
 
 	return (
-		<section className="lg:container lg:mt-44 py-12 space-y-12">
+		<section id="contact" className="lg:container py-12 space-y-12">
 			<h1 className="text-3xl text-center text-white font-semibold lg:text-start lg:text-5xl">
 				{t("common:widgets.contact.headline")}
 			</h1>
