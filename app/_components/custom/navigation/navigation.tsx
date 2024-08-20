@@ -15,7 +15,7 @@ export const Navigation = () => {
 			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
 				<motion.div
 					initial={{ height: 100 }}
-					animate={{ height: isOpen ? 360 : 100 }}
+					animate={{ height: isOpen ? 340 : 100 }}
 					exit={{ height: 100 }}
 					className="container overflow-hidden flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10"
 				>

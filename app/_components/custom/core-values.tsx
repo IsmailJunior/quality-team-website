@@ -12,7 +12,7 @@ export const CoreValues: FC = () => {
 			<h1 className="text-4xl">
 				{t("common:widgets.core_values.headline")}
 			</h1>
-			<div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+			<div className="flex flex-col lg:flex-row  lg:items-center">
 				{values.map(element => (
 					<div key={element.id}>
 						<Value
