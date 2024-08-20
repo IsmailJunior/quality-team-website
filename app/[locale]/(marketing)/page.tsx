@@ -6,6 +6,7 @@ import { CoreValuesWidget } from "@/app/_components/widgets/core-values-widget";
 import { FindMore } from "@/app/_components/widgets/find-more";
 import { PartenersWidget } from "@/app/_components/widgets/parteners-widget";
 import { BentoGalaryWidget } from "@/app/_components/widgets/bento-galary-widget";
+import { NewsLetter } from "@/app/_components/widgets/news-letter";
 const Home: NextPage<{ params: { locale: any } }> = async ({
 	params: { locale },
 }) => {
@@ -18,6 +19,7 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 			<PartenersWidget locale={locale} />
 			<FindMore locale={locale} />
 			<BentoGalaryWidget locale={locale} />
+			<NewsLetter locale={locale} />
 		</div>
 	);
 };

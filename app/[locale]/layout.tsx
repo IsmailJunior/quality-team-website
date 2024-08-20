@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter as FontSans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -57,6 +58,7 @@ export default async function RootLayout({
 					<Toaster />
 					<Footer locale={locale} />
 				</Providers>
+				<Script src={process.env.NEXT_PUBLIC_MAILJET_SCRIPT_ID} />
 			</body>
 			<GoogleAnalytics
 				gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string}
