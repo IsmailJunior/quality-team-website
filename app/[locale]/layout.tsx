@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Inter as FontSans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { dir } from "i18next";
 import initTranslations from "@/app/_config/i18n";
 import { i18nConfig } from "@/app/_config/i18nConfig";
@@ -37,6 +39,9 @@ export default async function RootLayout({
 	const { resources } = await initTranslations(locale, i18Namespaces);
 	return (
 		<html lang={locale} dir={dir(locale)}>
+			<GoogleTagManager
+				gtmId={process.env.NEXT_PUBLIC_GOOGLE_Tag_ID as string}
+			/>
 			<body
 				className={cn(
 					"min-h-screen bg-zinc-950 font-sans antialiased",
