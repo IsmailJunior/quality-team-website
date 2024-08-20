@@ -24,7 +24,7 @@ export const BentoGalary: FC = () => {
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA}
-					alt="Photo"
+					alt="RED Camera"
 					className="absolute [--duration:20s]"
 				/>
 			),
@@ -43,7 +43,7 @@ export const BentoGalary: FC = () => {
 					width={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.width}
 					height={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL.height}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_GIRL}
-					alt="Photo"
+					alt="A makeup artist adorns a little girl"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),
@@ -66,7 +66,7 @@ export const BentoGalary: FC = () => {
 						BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_SCREEN.height
 					}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_SCREEN}
-					alt="Photo"
+					alt="Camera screen pointing at student"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),
@@ -89,7 +89,7 @@ export const BentoGalary: FC = () => {
 						BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_MAN_DOB.height
 					}
 					src={BEHIND_THE_SCENE.BEHIND_THE_SCENE_CAMERA_MAN_DOB}
-					alt="Photo"
+					alt="A man holding a camera"
 					className="absolute [--duration:20s] bg-zinc-950"
 				/>
 			),

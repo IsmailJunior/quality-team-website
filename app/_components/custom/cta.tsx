@@ -14,19 +14,18 @@ export const CTA: FC = () => {
 				<h1 className="text-4xl">
 					{t("common:widgets.main_cta.title")}
 				</h1>
-				<Link href="/about-us">
-					<Button size="lg" variant="outline">
+				<Link href="/about-us" className="w-fit">
+					<Button size="lg" variant="outline" name="learn_more">
 						{t("common:widgets.main_cta.description")}
 					</Button>
 				</Link>
 			</div>
 			<Image
-				unoptimized
 				className="hidden lg:block"
 				src={CTA_IMAGES.STUDENT_ON_TABLET}
 				width={900}
 				height={900}
-				alt="Singer"
+				alt="Student study on tablet late night"
 			/>
 		</div>
 	);

@@ -140,6 +140,7 @@ export const ContactUs: FC = () => {
 					/>
 
 					<Button
+						name="submit"
 						disabled={isSending ? true : false}
 						type="submit"
 						className="mt-4 bg-white border  text-zinc-950 hover:text-white lg:w-full"

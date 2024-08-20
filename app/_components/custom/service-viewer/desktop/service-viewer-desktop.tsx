@@ -26,7 +26,7 @@ export const ServiceViewer: FC = () => {
 					}}
 					className="flex text-white space-y-6 flex-col items-center w-full z-10"
 				>
-					<button onClick={onChevronClick}>
+					<button onClick={onChevronClick} name="scroll_up">
 						<ChevronUp size={30} />
 					</button>
 					<Switcher
@@ -36,7 +36,7 @@ export const ServiceViewer: FC = () => {
 						}
 						currentProfile={currentProfile}
 					/>
-					<button>
+					<button name="scroll_down">
 						<ChevronDown size={30} onClick={onChevronClick} />
 					</button>
 				</div>

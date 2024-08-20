@@ -1,7 +1,5 @@
 import { ReactNode } from "react";
-import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-
 import { cn } from "@/app/_lib/utils";
 import { Button } from "@/app/_components/ui/button";
 
@@ -67,6 +65,7 @@ const BentoCard = ({
 			)}
 		>
 			<Button
+				name="learn_more"
 				variant="ghost"
 				asChild
 				size="sm"
@@ -74,7 +73,6 @@ const BentoCard = ({
 			>
 				<Link target="_blank" href={href}>
 					{cta}
-					<ArrowRightIcon className="ml-2 h-4 w-4" />
 				</Link>
 			</Button>
 		</div>

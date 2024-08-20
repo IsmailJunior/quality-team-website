@@ -4,6 +4,11 @@ import { LOGO } from "@/app/_constants/logo";
 
 export const Logo: FC = () => {
 	return (
-		<Image unoptimized src={LOGO.src} alt="Logo" height={150} width={150} />
+		<Image
+			src={LOGO.src}
+			alt="Logo of QualityTeam"
+			height={150}
+			width={150}
+		/>
 	);
 };

@@ -10,19 +10,18 @@ export const CTAFindMore: FC = () => {
 	return (
 		<div className="flex items-center justify-between w-full py-28 lg:py-0">
 			<Image
-				unoptimized
 				className="hidden lg:block"
 				src={CTA_IMAGES.BEHIND_THE_SCENE_TWO_CAMERA_MEN}
 				width={800}
 				height={800}
-				alt="Singer"
+				alt="Two camera men holding a big camera"
 			/>
 			<div className="flex flex-col justify-center items-center mx-auto lg:items-start lg:mx-0 px-5 space-y-5">
 				<h1 className="text-4xl text-center lg:text-start">
 					{t("common:widgets.second_cta.title")}
 				</h1>
 				<Link href="/about-us">
-					<Button size="lg" variant="outline">
+					<Button size="lg" variant="outline" name="find_more">
 						{t("common:widgets.second_cta.description")}
 					</Button>
 				</Link>
