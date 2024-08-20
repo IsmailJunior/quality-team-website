@@ -1,12 +1,14 @@
-"use client";
 import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import initTranslations from "@/app/_config/i18n";
 import { Button } from "@/app/_components/ui/button";
 import { CTA_IMAGES } from "@/app/_constants/cta";
-export const CTAFindMore: FC = () => {
-	const { t } = useTranslation();
+
+const i18Namespaces = ["common"];
+
+export const CTAFindMore: FC<{ locale: any }> = async ({ locale }) => {
+	const { t } = await initTranslations(locale, i18Namespaces);
 	return (
 		<div className="flex items-center justify-between w-full py-28 lg:py-0">
 			<Image

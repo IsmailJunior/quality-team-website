@@ -1,4 +1,3 @@
-"use client";
 import type { FC } from "react";
 import type { valueType } from "@/app/_types/home-page";
 export const Value: FC<valueType> = ({ headline, description, Icon }) => {

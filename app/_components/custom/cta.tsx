@@ -1,12 +1,13 @@
-"use client";
 import type { FC } from "react";
-import { useTranslation } from "react-i18next";
+import initTranslations from "@/app/_config/i18n";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/_components/ui/button";
 import { CTA_IMAGES } from "@/app/_constants/cta";
-export const CTA: FC = () => {
-	const { t } = useTranslation();
+const i18Namespaces = ["common"];
+
+export const CTA: FC<{ locale: any }> = async ({ locale }) => {
+	const { t } = await initTranslations(locale, i18Namespaces);
 	return (
 		<div className="flex items-center text-center lg:text-start justify-between w-full">
 			<div className="flex flex-col mx-auto px-5 space-y-5">

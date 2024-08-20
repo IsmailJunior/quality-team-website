@@ -1,14 +1,14 @@
-"use client";
 import type { FC } from "react";
-import Image from "next/image";
-import { useTranslation } from "react-i18next";
-import { Blend, Aperture, Flower, Brush } from "lucide-react";
 import type { bentoGalaryType } from "@/app/_types/about-us-page";
+import Image from "next/image";
+import initTranslations from "@/app/_config/i18n";
+import { Blend, Aperture, Flower, Brush } from "lucide-react";
 import { BentoCard, BentoGrid } from "@/app/_components/magicui/bento-grid";
 import { BEHIND_THE_SCENE } from "@/app/_constants/bento";
+const i18Namespaces = ["common"];
 
-export const BentoGalary: FC = () => {
-	const { t } = useTranslation();
+export const BentoGalary: FC<{ locale: any }> = async ({ locale }) => {
+	const { t } = await initTranslations(locale, i18Namespaces);
 	const bentoElements: bentoGalaryType[] = [
 		{
 			Icon: Aperture,

@@ -1,4 +1,3 @@
-"use client";
 import type { FC } from "react";
 import Image from "next/image";
 import { BEHIND_THE_SCENE_GROUP_PHOTO } from "@/app/_constants/about-us";

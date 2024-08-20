@@ -1,4 +1,3 @@
-"use client";
 import type { FC } from "react";
 import Marquee from "@/app/_components/magicui/marquee";
 import { FIRST } from "@/app/_constants/logos";

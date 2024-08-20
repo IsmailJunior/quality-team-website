@@ -51,7 +51,7 @@ export default async function RootLayout({
 					<Navigation />
 					<main>{children}</main>
 					<Toaster />
-					<Footer />
+					<Footer locale={locale} />
 				</Providers>
 			</body>
 			<GoogleAnalytics

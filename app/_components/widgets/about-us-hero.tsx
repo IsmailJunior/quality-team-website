@@ -1,4 +1,3 @@
-"use client";
 import type { FC } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";

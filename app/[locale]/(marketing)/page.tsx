@@ -11,13 +11,13 @@ const Home: NextPage<{ params: { locale: any } }> = async ({
 }) => {
 	return (
 		<div className="flex flex-col">
-			<MainBanner locale={locale} />
+			<MainBanner />
 			<Services />
-			<CallToAction />
+			<CallToAction locale={locale} />
 			<CoreValuesWidget />
-			<PartenersWidget />
-			<FindMore />
-			<BentoGalaryWidget />
+			<PartenersWidget locale={locale} />
+			<FindMore locale={locale} />
+			<BentoGalaryWidget locale={locale} />
 		</div>
 	);
 };

@@ -1,4 +1,3 @@
-"use client";
 import type { FC } from "react";
 import { CoreValues } from "@/app/_components/custom/core-values";
 
