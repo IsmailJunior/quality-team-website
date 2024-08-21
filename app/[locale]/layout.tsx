@@ -11,6 +11,7 @@ import { cn } from "@/app/_lib/utils";
 import { Toaster } from "@/app/_components/ui/toaster";
 import { Navigation } from "@/app/_components/custom/navigation/navigation";
 import { Footer } from "@/app/_components/custom/footer";
+import { WhatsAppWidget } from "@/app/_components/custom/whats-app-widget";
 import "@/app/_styles/globals.css";
 
 export const kufam = Kufam({
@@ -58,6 +59,7 @@ export default async function RootLayout({
 					<main>{children}</main>
 					<Toaster />
 					<Footer locale={locale} />
+					<WhatsAppWidget />
 				</Providers>
 				<Script src={process.env.NEXT_PUBLIC_MAILJET_SCRIPT_ID} />
 			</body>

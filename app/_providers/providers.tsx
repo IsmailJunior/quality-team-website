@@ -1,6 +1,7 @@
 "use client";
 import type { FC, ReactNode } from "react";
 import { TranslationsProvider } from "@/app/_providers/translations-provider";
+import { ChatPanelContextProvider } from "@/app/_store/chat-panel-context";
 type providersType = {
 	children: ReactNode;
 	locale: string;
@@ -20,7 +21,7 @@ export const Providers: FC<providersType> = ({
 			namespaces={namespaces}
 			resources={resources}
 		>
-			{children}
+			<ChatPanelContextProvider>{children}</ChatPanelContextProvider>
 		</TranslationsProvider>
 	);
 };

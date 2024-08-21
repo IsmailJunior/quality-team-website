@@ -22,6 +22,12 @@
 		"attr": "جميع الحقوق محفوظة لشركة QualityTeam 2024"
 	},
 	"widgets": {
+		"whatsapp": {
+			"message": "مرحباً، كيف يمكنني مساعدتك؟",
+			"chat": "دردش في واتس اب",
+			"name": "سارة علي",
+			"status": "متصل"
+		},
 		"parteners": {
 			"headline": "شركائنا"
 		},

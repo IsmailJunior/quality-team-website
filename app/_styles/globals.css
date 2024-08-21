@@ -103,3 +103,8 @@
 .kufam {
   font-family: var(--font-kufam);
 }
+.pattern {
+  background-color: #f6f29e;
+  background-image: radial-gradient(#232323 0.5px, #f4ecd9 0.5px);
+  background-size: 10px 10px;
+}

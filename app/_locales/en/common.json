@@ -22,6 +22,12 @@
 		"attr": "QualityTeam 2024 All rights Reseved"
 	},
 	"widgets": {
+		"whatsapp": {
+			"message": "Hi there, How can I help you?",
+			"chat": "Chat on WhatsApp",
+			"name": "Sara Ali",
+			"status": "Online"
+		},
 		"parteners": {
 			"headline": "Parteners"
 		},
