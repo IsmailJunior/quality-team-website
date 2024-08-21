@@ -108,7 +108,7 @@ const ChatWidget: FC = () => {
 	return (
 		<Link
 			target="_blank"
-			href="https://wa.me/+964776662512"
+			href="https://wa.me/964776662512"
 			title="Chat on WhatsApp"
 		>
 			<div className="h-16 w-72 flex hover:bg-green-500 transition-all duration-300 justify-center items-center gap-4 text-white font-bold bg-green-600 mx-auto rounded-full">

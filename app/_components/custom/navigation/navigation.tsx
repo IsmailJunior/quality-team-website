@@ -12,12 +12,12 @@ export const Navigation = () => {
 	const { isOpen, resetMenu, onMenuClicked } = useNavigation();
 	return (
 		<AnimatePresence>
-			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
+			<div className="fixed w-screen border-b border-slate-500 top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
 				<motion.div
 					initial={{ height: 100 }}
 					animate={{ height: isOpen ? 325 : 100 }}
 					exit={{ height: 100 }}
-					className="container overflow-hidden flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10"
+					className="container overflow-hidden flex flex-wrap items-center  lg:space-x-0 lg:py-0 pb-10"
 				>
 					<div className="flex-1 flex justify-between items-center">
 						<div className="py-5">
@@ -41,9 +41,9 @@ export const Navigation = () => {
 					>
 						<AlignJustify />
 					</button>
-					<div className="flex flex-col justify-center items-center font-normal text-2xl lg:text-base text-center lg:flex lg:items-center lg:w-auto w-full">
+					<div className="flex flex-col justify-center items-center font-normal lg:text-base text-center lg:flex lg:items-center lg:w-auto w-full">
 						<nav>
-							<ul className="lg:flex lg:border items-center space-y-5 lg:space-y-0 justify-between pt-4 lg:pt-0">
+							<ul className="lg:flex lg:border items-center space-y-5 lg:space-y-0 justify-between pt-10 lg:pt-0">
 								<li>
 									<Link
 										title="Home"
