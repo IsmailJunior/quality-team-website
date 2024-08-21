@@ -20,15 +20,6 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 			<section className="flex gap-12 lg:mx-24 mt-16 text-slate-300">
 				<ul className="flex flex-col gap-6">
 					<li>
-						<Link
-							title="Support"
-							target="_blank"
-							href="https://qualityteamiq.ladesk.com"
-						>
-							{t("common:footer.links.support")}
-						</Link>
-					</li>
-					<li>
 						<Link href="/about-us#contact" title="Contact">
 							{t("common:footer.links.contact")}
 						</Link>
@@ -55,9 +46,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 					</li>
 				</ul>
 			</section>
-			<span className="lg:mx-24 absolute bottom-44">
-				{t("common:footer.attr")}
-			</span>
+			<span className="lg:mx-24">{t("common:footer.attr")}</span>
 		</footer>
 	);
 };

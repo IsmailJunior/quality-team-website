@@ -15,7 +15,7 @@ export const Navigation = () => {
 			<div className="fixed w-screen border-b border-slate-500  top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
 				<motion.div
 					initial={{ height: 100 }}
-					animate={{ height: isOpen ? 340 : 100 }}
+					animate={{ height: isOpen ? 325 : 100 }}
 					exit={{ height: 100 }}
 					className="container overflow-hidden flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10"
 				>
@@ -51,7 +51,9 @@ export const Navigation = () => {
 										className="lg:p-4 py-3 px-0 block"
 										href="/"
 									>
-										<div>{t("common:navbar.home")}</div>
+										<div className="text-lg">
+											{t("common:navbar.home")}
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -61,7 +63,9 @@ export const Navigation = () => {
 										className="lg:p-4 py-3 px-0 block"
 										href="/about-us"
 									>
-										<div>{t("common:navbar.about_us")}</div>
+										<div className="text-lg">
+											{t("common:navbar.about_us")}
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -72,7 +76,9 @@ export const Navigation = () => {
 										className="lg:p-4 py-3 px-0 block transition-all lg:bg-white lg:text-zinc-950 hover:bg-zinc-950 lg:border hover:text-white hover:border-white"
 										href="tel:0774666251"
 									>
-										<div>{t("common:navbar.cta")}</div>
+										<div className="text-lg">
+											{t("common:navbar.cta")}
+										</div>
 									</Link>
 								</li>
 							</ul>

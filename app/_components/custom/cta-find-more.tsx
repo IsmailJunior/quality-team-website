@@ -19,11 +19,11 @@ export const CTAFindMore: FC<{ locale: any }> = async ({ locale }) => {
 				alt="Two camera men holding a big camera"
 			/>
 			<div className="flex flex-col justify-center items-center mx-auto lg:items-start lg:mx-0 px-5 space-y-5">
-				<h1 className="text-4xl text-center lg:text-start">
+				<h1 className="lg:text-4xl text-center lg:text-start">
 					{t("common:widgets.second_cta.title")}
 				</h1>
 				<Link href="/about-us" title="Find More">
-					<Button size="lg" variant="outline" name="find_more">
+					<Button variant="outline" name="find_more">
 						{t("common:widgets.second_cta.description")}
 					</Button>
 				</Link>

@@ -8,7 +8,7 @@ export const ContactUsWidget: FC<{ locale: any }> = async ({ locale }) => {
 
 	return (
 		<section id="contact" className="lg:container py-12 space-y-12">
-			<h1 className="text-3xl text-center text-white font-semibold lg:text-start lg:text-5xl">
+			<h1 className="text-xl text-center text-white font-semibold lg:text-start lg:text-5xl">
 				{t("common:widgets.contact.headline")}
 			</h1>
 			<ContactUs locale={locale} />

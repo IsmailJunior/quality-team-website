@@ -40,7 +40,7 @@ export const WhatsAppWidget: FC = () => {
 
 const ChatPanel: FC = () => {
 	return (
-		<div className="h-80 w-96 flex flex-col justify-between relative pattern py-10 px-5 rounded-xl ltr:ml-7 rtl:mr-7 shadow-xl overflow-hidden">
+		<div className="h-80 lg:w-96 flex flex-col justify-between relative pattern py-10 px-5 rounded-xl mx-3 lg:ltr:ml-7 lg:rtl:mr-7 shadow-xl overflow-hidden">
 			<ChatHeader />
 			<ChatBubble />
 			<ChatWidget />
