@@ -22,7 +22,7 @@ export const CTAFindMore: FC<{ locale: any }> = async ({ locale }) => {
 				<h1 className="text-4xl text-center lg:text-start">
 					{t("common:widgets.second_cta.title")}
 				</h1>
-				<Link href="/about-us">
+				<Link href="/about-us" title="Find More">
 					<Button size="lg" variant="outline" name="find_more">
 						{t("common:widgets.second_cta.description")}
 					</Button>

@@ -21,6 +21,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 				<ul className="flex flex-col gap-6">
 					<li>
 						<Link
+							title="Support"
 							target="_blank"
 							href="https://qualityteamiq.ladesk.com"
 						>
@@ -28,7 +29,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 						</Link>
 					</li>
 					<li>
-						<Link href="/about-us#contact">
+						<Link href="/about-us#contact" title="Contact">
 							{t("common:footer.links.contact")}
 						</Link>
 					</li>
@@ -36,6 +37,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 				<ul className="flex flex-col gap-6">
 					<li>
 						<Link
+							title="Facebook"
 							target="_blank"
 							href="https://www.facebook.com/profile.php?id=61551994790268"
 						>
@@ -44,6 +46,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 					</li>
 					<li>
 						<Link
+							title="Instagram"
 							target="_blank"
 							href="https://www.instagram.com/qualityteam.iq/"
 						>

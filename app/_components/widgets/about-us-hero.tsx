@@ -6,7 +6,7 @@ export const AboutUsHeroWidget: FC = () => {
 	return (
 		<section className="h-[730px] flex flex-col justify-center items-center">
 			<AboutUsHero />
-			<Link href="#contact">
+			<Link href="#contact" title="Contact">
 				<ChevronDown color="white" size={50} className="mt-14" />
 			</Link>
 		</section>

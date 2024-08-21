@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Kufam } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { dir } from "i18next";
@@ -13,9 +13,10 @@ import { Navigation } from "@/app/_components/custom/navigation/navigation";
 import { Footer } from "@/app/_components/custom/footer";
 import "@/app/_styles/globals.css";
 
-const fontSans = FontSans({
-	subsets: ["latin"],
-	variable: "--font-sans",
+export const kufam = Kufam({
+	subsets: ["arabic"],
+	variable: "--font-kufam",
+	display: "swap",
 });
 
 const i18Namespaces = ["home", "common"];
@@ -44,8 +45,8 @@ export default async function RootLayout({
 			/>
 			<body
 				className={cn(
-					"min-h-screen bg-zinc-950 font-sans antialiased",
-					fontSans.variable
+					"min-h-screen bg-zinc-950 font-sans kufam antialiased",
+					kufam.variable
 				)}
 			>
 				<Providers

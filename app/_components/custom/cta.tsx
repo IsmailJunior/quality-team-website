@@ -15,7 +15,7 @@ export const CTA: FC<{ locale: any }> = async ({ locale }) => {
 				<h1 className="text-4xl">
 					{t("common:widgets.main_cta.title")}
 				</h1>
-				<Link href="/about-us" className="w-fit">
+				<Link href="/about-us" className="w-fit" title="Learn More">
 					<Button size="lg" variant="outline" name="learn_more">
 						{t("common:widgets.main_cta.description")}
 					</Button>

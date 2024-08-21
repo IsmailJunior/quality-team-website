@@ -100,3 +100,6 @@
     /* Firefox */
   }
 }
+.kufam {
+  font-family: var(--font-kufam);
+}

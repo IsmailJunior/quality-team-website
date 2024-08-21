@@ -13,7 +13,7 @@ const config = {
   theme: {
     extends: {
       fontFamily: {
-        sans: ['var(--font-sans)', fontFamily.sans]
+        sans: [ 'var(--font-sans)', fontFamily.sans ]
       }
     },
     container: {

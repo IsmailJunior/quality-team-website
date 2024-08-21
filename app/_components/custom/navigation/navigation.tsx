@@ -25,7 +25,12 @@ export const Navigation = () => {
 						</div>
 					</div>
 					<div className="flex-1 flex justify-between items-center">
-						<Link onClick={resetMenu} className="py-5" href="/">
+						<Link
+							onClick={resetMenu}
+							className="p-5"
+							href="/"
+							title="Logo"
+						>
 							<Logo />
 						</Link>
 					</div>
@@ -41,6 +46,7 @@ export const Navigation = () => {
 							<ul className="lg:flex lg:border items-center space-y-5 lg:space-y-0 justify-between pt-4 lg:pt-0">
 								<li>
 									<Link
+										title="Home"
 										onClick={resetMenu}
 										className="lg:p-4 py-3 px-0 block"
 										href="/"
@@ -50,6 +56,7 @@ export const Navigation = () => {
 								</li>
 								<li>
 									<Link
+										title="About us"
 										onClick={resetMenu}
 										className="lg:p-4 py-3 px-0 block"
 										href="/about-us"
@@ -59,6 +66,7 @@ export const Navigation = () => {
 								</li>
 								<li>
 									<Link
+										title="Call us"
 										onClick={resetMenu}
 										target="_blank"
 										className="lg:p-4 py-3 px-0 block transition-all lg:bg-white lg:text-zinc-950 hover:bg-zinc-950 lg:border hover:text-white hover:border-white"
