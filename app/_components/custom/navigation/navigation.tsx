@@ -12,7 +12,7 @@ export const Navigation = () => {
 	const { isOpen, resetMenu, onMenuClicked } = useNavigation();
 	return (
 		<AnimatePresence>
-			<div className="fixed w-screen border-b border-slate-500 top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
+			<div className="fixed w-screen border-b border-slate-500 top-0 bg-gradient-to-r z-50 text-slate-100 font-semibold bg-zinc-950 lg:px-16">
 				<motion.div
 					initial={{ height: 100 }}
 					animate={{ height: isOpen ? 325 : 100 }}
