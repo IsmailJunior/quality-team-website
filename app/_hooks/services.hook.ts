@@ -1,7 +1,8 @@
 'use client';
+import type { elementType } from '@/app/_types/home-page';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { elementType } from '@/app/_types/home-page';
+import { PenTool, ClipboardPen, Clapperboard, BadgeDollarSign} from 'lucide-react';
 import { SERVICES } from '@/app/_constants/services';
 
 export const useServices = () =>
@@ -12,7 +13,7 @@ export const useServices = () =>
 			id: 1,
 			pos: 1,
 			active: true,
-			thumnail: SERVICES.graphic_design.thumnail.src,
+			thumnail: PenTool,
 			picture: SERVICES.graphic_design.picture.src,
 			title: t("services.service.graphic_design.title"),
 			description: t("services.service.graphic_design.description"),
@@ -21,7 +22,7 @@ export const useServices = () =>
 			id: 2,
 			pos: 2,
 			active: true,
-			thumnail: SERVICES.content_creation.thumnail.src,
+			thumnail: ClipboardPen,
 			picture: SERVICES.content_creation.picture.src,
 			title: t("services.service.content_creation.title"),
 			description: t("services.service.content_creation.description"),
@@ -30,7 +31,7 @@ export const useServices = () =>
 			id: 3,
 			pos: 3,
 			active: true,
-			thumnail: SERVICES.video_editing.thumnail.src,
+			thumnail: Clapperboard,
 			picture: SERVICES.video_editing.picture.src,
 			title: t("services.service.video_editing.title"),
 			description: t("services.service.video_editing.description"),
@@ -39,7 +40,7 @@ export const useServices = () =>
 			id: 4,
 			pos: 4,
 			active: true,
-			thumnail: SERVICES.marketing.thumnail.src,
+			thumnail: BadgeDollarSign,
 			picture: SERVICES.marketing.picture.src,
 			title: t("services.service.marketing.title"),
 			description: t("services.service.marketing.description"),

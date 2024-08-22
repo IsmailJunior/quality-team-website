@@ -9,7 +9,7 @@ export const Services: FC = () => {
 	const { isMinWidthMedium } = useResponsive();
 	return (
 		<section className="h-[750px] bg-center bg-cover bg-no-repeat hue-rotate-60">
-			<h1 className="text-white lg:text-4xl text-center mt-12 left-1/2 -translate-x-1/2 absolute">
+			<h1 className="text-white text-xl font-semibold lg:text-4xl text-center mt-12 left-1/2 -translate-x-1/2 absolute">
 				{t("services.headline")}
 			</h1>
 			{isMinWidthMedium ? <ServiceViewerMobile /> : <ServiceViewer />}

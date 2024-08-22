@@ -16,7 +16,7 @@ export const ServiceViewer: FC = () => {
 	} = useSliderController();
 	return (
 		<div className="container flex flex-col pt-24 h-[750px] justify-center space-y-20 w-full max-w-6xl">
-			<div className="flex flex-row justify-between space-x-20 mx-auto w-screen max-w-4xl">
+			<div className="flex flex-row justify-between mx-auto w-screen max-w-5xl">
 				<div
 					onMouseEnter={() => {
 						onMouseOver(true);
@@ -24,7 +24,7 @@ export const ServiceViewer: FC = () => {
 					onMouseLeave={() => {
 						onMouseOver(false);
 					}}
-					className="flex text-white space-y-6 flex-col items-center w-full z-10"
+					className="flex text-white flex-col justify-center items-center w-full z-10"
 				>
 					<button onClick={onChevronClick} name="scroll_up">
 						<ChevronUp size={30} />

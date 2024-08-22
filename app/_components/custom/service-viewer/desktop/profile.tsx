@@ -8,8 +8,8 @@ export const Profile: FC<profileType> = ({ image }) => {
 			<Image
 				priority
 				src={image}
-				height={500}
-				width={500}
+				height={400}
+				width={400}
 				alt="Camera man"
 			/>
 		</div>

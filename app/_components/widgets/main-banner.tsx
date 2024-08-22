@@ -6,7 +6,7 @@ const Hero = dynamic(() => import("@/app/_components/custom/hero"), {
 
 export const MainBanner: FC = () => {
 	return (
-		<section className="relative h-[300px] lg:h-[695px] overflow-hidden flex mt-12">
+		<section className="relative h-[700px] lg:h-[695px] overflow-hidden flex mt-12">
 			<Hero />
 		</section>
 	);

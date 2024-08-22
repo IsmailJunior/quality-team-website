@@ -9,8 +9,8 @@ const i18Namespaces = ["common"];
 export const CTA: FC<{ locale: any }> = async ({ locale }) => {
 	const { t } = await initTranslations(locale, i18Namespaces);
 	return (
-		<div className="flex items-center text-center lg:text-start justify-between w-full">
-			<div className="flex flex-col mx-auto px-5 space-y-5">
+		<div className="flex items-center text-center lg:text-start justify-between w-full h-full overflow-hidden relative">
+			<div className="flex flex-2 mx-auto lg:mx-0 font-bold items-center justify-center lg:items-start lg:w-1/3 h-full text-slate-200 lg:text-zinc-950 lg:bg-white flex-col px-5 space-y-5 z-10 lg:z-auto">
 				<h1>{t("common:widgets.main_cta.label")}</h1>
 				<h1 className="lg:text-4xl">
 					{t("common:widgets.main_cta.title")}
@@ -25,13 +25,14 @@ export const CTA: FC<{ locale: any }> = async ({ locale }) => {
 					</Button>
 				</Link>
 			</div>
-			<Image
-				className="hidden lg:block"
-				src={CTA_IMAGES.STUDENT_ON_TABLET}
-				width={900}
-				height={900}
-				alt="Student study on tablet late night"
-			/>
+			<div className="flex-1 absolute lg:relative w-full h-full">
+				<Image
+					className="saturate-50 object-cover lg:saturate-100 "
+					src={CTA_IMAGES.STUDENT_ON_TABLET}
+					fill
+					alt="Student study on tablet late night"
+				/>
+			</div>
 		</div>
 	);
 };

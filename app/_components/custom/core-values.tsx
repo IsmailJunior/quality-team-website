@@ -9,10 +9,10 @@ export const CoreValues: FC = () => {
 	const { values } = useValues();
 	return (
 		<div className="space-y-20 flex flex-col justify-center items-center">
-			<h1 className="lg:text-4xl">
+			<h1 className="text-xl font-semibold lg:text-4xl">
 				{t("common:widgets.core_values.headline")}
 			</h1>
-			<div className="flex flex-col lg:flex-row  lg:items-center">
+			<div className="flex flex-col lg:flex-row lg:items-center">
 				{values.map(element => (
 					<div key={element.id}>
 						<Value

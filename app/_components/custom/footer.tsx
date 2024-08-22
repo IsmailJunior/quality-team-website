@@ -8,24 +8,22 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 	const { t } = await initTranslations(locale, i18Namespaces);
 	return (
 		<footer
-			className="h-[500px] mt-16 bg-center bg-cover bg-no-repeat text-white relative"
+			className="h-[500px] px-10 lg:px-24 mt-16 bg-center bg-cover bg-no-repeat text-white relative"
 			style={{ backgroundImage: `url(${FOOTER_BACKGROUND.src})` }}
 		>
-			<section className="lg:mx-24 space-y-12">
+			<section className="space-y-12">
 				<h1 className="text-xl">{t("common:footer.about_us.title")}</h1>
 				<p className="text-sm lg:text-lg">
 					{t("common:footer.about_us.description")}
 				</p>
 			</section>
-			<section className="flex gap-12 lg:mx-24 mt-16 text-slate-300">
-				<ul className="flex flex-col gap-6">
+			<section className="flex gap-12 my-16 text-slate-300">
+				<ul className="flex gap-6">
 					<li>
 						<Link href="/about-us#contact" title="Contact">
 							{t("common:footer.links.contact")}
 						</Link>
 					</li>
-				</ul>
-				<ul className="flex flex-col gap-6">
 					<li>
 						<Link
 							title="Facebook"
@@ -46,7 +44,7 @@ export const Footer: FC<{ locale: any }> = async ({ locale }) => {
 					</li>
 				</ul>
 			</section>
-			<span className="lg:mx-24">{t("common:footer.attr")}</span>
+			<span>{t("common:footer.attr")}</span>
 		</footer>
 	);
 };

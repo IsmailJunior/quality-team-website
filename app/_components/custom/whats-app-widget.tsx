@@ -12,7 +12,7 @@ import { SARA_SUPPORT } from "@/app/_constants/chat";
 export const WhatsAppWidget: FC = () => {
 	const { isChatPanelOpen, handleSwitchPanel } = useContext(ChatPanelContext);
 	return (
-		<div className="fixed bottom-0">
+		<div className="fixed bottom-0 z-50">
 			<AnimatePresence>
 				{isChatPanelOpen && (
 					<motion.div

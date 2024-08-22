@@ -6,7 +6,7 @@ export type elementType = {
 	id: number;
 	pos: number;
 	active: boolean;
-	thumnail: string;
+	thumnail: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
 	picture: string;
 	title: string;
 	description: string;

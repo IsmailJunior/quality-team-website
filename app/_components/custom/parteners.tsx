@@ -11,7 +11,7 @@ export const Parteners: FC = () => {
 			<Marquee pauseOnHover className="[--duration:20s]">
 				{firstRow.map((logo, index) => (
 					<div
-						className="h-36 w-56 bg-center bg-contain bg-no-repeat"
+						className="h-28 w-28 edge lg:h-36 lg:w-56 bg-center bg-contain bg-no-repeat"
 						key={index}
 						style={{ backgroundImage: `url(${logo.src})` }}
 					/>
@@ -20,7 +20,7 @@ export const Parteners: FC = () => {
 			<Marquee reverse pauseOnHover className="[--duration:20s]">
 				{secondRow.map((logo, index) => (
 					<div
-						className="h-36 w-56 bg-center bg-contain bg-no-repeat"
+						className="h-28 w-28 edge lg:h-36 lg:w-56 bg-center bg-contain bg-no-repeat"
 						key={index}
 						style={{ backgroundImage: `url(${logo.src})` }}
 					/>
